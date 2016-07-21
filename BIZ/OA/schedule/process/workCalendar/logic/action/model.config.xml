@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><model xmlns="http://www.justep.com/model">
+	<use>/system/logic/action</use>
+	<use>/OA/schedule/process/workCalendar/data</use>
+<use>/OA/workLog/logic/action</use><use>/OA/workLog/logic/code</use><use>/SA/OPM/logic/action</use></model>

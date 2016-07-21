@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<item label="我的工作"/>
+	<item label="我的信息"/>
+	<item label="协同办公"/>
+	<item label="演示案例"/>
+	<item label="报表图表"/>
+	<item label="组件"/>
+	<item label="知识中心"/>
+	<item label="档案管理"/>
+	<item label="公文管理"/>
+	<item label="办公用品管理"/>
+	<item label="固定资产管理"/>
+	<item label="信息发布"/>
+	<item label="会议室管理"/>
+	<item label="考勤管理"/>
+	<item label="财务报销"/>
+	<item label="预算管理"/>
+	<item label="车辆管理"/>
+	<item label="常用办公管理"/>
+	<item label="个人办公管理"/>
+	<item label="证照管理"/>
+	<item label="图书管理"/>
+	<item label="问卷调查"/>
+	<item label="统计查询"/>
+	<item label="我的审批设置"/>
+</config>

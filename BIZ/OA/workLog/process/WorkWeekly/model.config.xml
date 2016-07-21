@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><model xmlns="http://www.justep.com/model">
+	<use>/OA/WorkLog/data</use>
+	<use>/OA/WorkLog/logic/action</use>
+	<use>/OA/WorkLog/logic/code</use>
+	<use>/system/logic/fn</use>
+	<use>/system/logic/action</use>
+	<use>/system/logic/code</use>
+</model>

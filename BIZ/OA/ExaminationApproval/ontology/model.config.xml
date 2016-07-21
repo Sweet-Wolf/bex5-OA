@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><model xmlns="http://www.justep.com/model">
+	<use>/system/logic/fn</use>
+	<include>/system/ontology</include>
+<use>/OA/officeSupplyConsumables</use><use>/OA/officeSupplyConsumables/data</use><use>/OA/officeSupplyConsumables/logic</use><use>/OA/officeSupplyConsumables/logic/action</use><use>/OA/officeSupplyConsumables/logic/code</use><use>/OA/officeSupplyConsumables/ontology</use><use>/OA/officeSupplyConsumables/process</use></model>

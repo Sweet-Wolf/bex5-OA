@@ -1,0 +1,9 @@
+.oa-label {
+ margin: 0;
+ padding: 0 0.625em 0 0;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ font-weight: normal;
+}
+
+.x-label{ white-space:normal;}

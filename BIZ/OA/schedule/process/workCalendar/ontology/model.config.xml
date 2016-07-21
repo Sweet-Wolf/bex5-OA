@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><model xmlns="http://www.justep.com/model">
+	<use>/system/logic/fn</use>
+	<include>/system/ontology</include>
+<use>/OA/schedule</use><use>/OA/schedule/data</use><use>/OA/schedule/logic</use><use>/OA/schedule/logic/action</use><use>/OA/schedule/logic/code</use><use>/OA/schedule/logic/fn</use><use>/OA/schedule/ontology</use><use>/OA/workTime/data</use></model>

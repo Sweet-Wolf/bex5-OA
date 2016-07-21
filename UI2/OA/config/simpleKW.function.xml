@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <item label="信息发布(portlet)"> 
+    <item label="新闻(文本+图片)" display="hide" url="$UI/OA/knowledge/process/knowledgePortlet/newsPic.a"
+      process="/OA/knowledge/process/knowledgePortlet/knowledgePortletProcess" activity="textPortletActivity"/>  
+    <item label="新闻更多" display="hide" url="$UI/OA/knowledge/process/knowledgeMore/knowledgeMoreActivity.a"
+      process="/OA/knowledge/process/knowledgeMore/knowledgeMoreProcess" activity="knowledgeMoreActivity"/>  
+    <item label="公告(文本)" display="hide" url="$UI/OA/knowledge/process/knowledgePortlet/noticePortlet.a"
+      process="/OA/knowledge/process/knowledgePortlet/knowledgePortletProcess" activity="textPortletActivity"/>  
+    <item label="更多公告" display="hide" url="$UI/OA/knowledge/process/knowledgeMore/knowledgeMoreActivity.a"
+      process="/OA/knowledge/process/knowledgeMore/knowledgeMoreProcess" activity="knowledgeMoreActivity"/>  
+    <item label="文件中心" display="hide" url="$UI/OA/knowledge/process/knowledgePortlet/docPortlet.a"
+      process="/OA/knowledge/process/knowledgePortlet/knowledgePortletProcess" activity="textPortletActivity"/>  
+    <item label="更多文件" display="hide" url="$UI/OA/knowledge/process/knowledgeMore/knowledgeMoreActivity.a"
+      process="/OA/knowledge/process/knowledgeMore/knowledgeMoreProcess" activity="knowledgeMoreActivity"/> 
+  </item>  
+  <item label="信息发布" iconClass="icon-ios7-browsers"> 
+    <item label="新闻管理"> 
+      <item label="新闻栏目设置" process="/OA/knowledge/process/simpleFolderSet/simpleFolderSetProcess"
+        activity="newsFDSetActivity" url="$UI/OA/knowledge/process/simpleFolderSet/newsFDSetActivity.a" device="pc"/>  
+      <item label="新闻发布" process="/OA/knowledge/process/simplePublishKnowledge/simplePublishKnowledgeProcess"
+        activity="newsPublishActivity" url="$UI/OA/knowledge/process/simplePublishKnowledge/newsPublishActivity.a" device="pc"/>  
+      <item label="新闻发布管理" process="/OA/knowledge/process/simplePublishKnowledgeManage/simplePublishKnowledgeManageProcess"
+        activity="newsPublishManageActivity" url="$UI/OA/knowledge/process/simplePublishKnowledgeManage/newsPublishManageActivity.a" device="pc"/>  
+      <item label="新闻查看" process="/OA/knowledge/process/simpleKnowledgeBase/simpleKnowledgeBaseProcess"
+        activity="newsBaseActivity" url="$UI/OA/knowledge/process/simpleKnowledgeBase/newsBaseActivity.a" device="pc"/> 
+    </item>  
+    <item label="公告管理" device="pc"> 
+      <item label="公告栏目设置" process="/OA/knowledge/process/simpleFolderSet/simpleFolderSetProcess"
+        activity="noticeFDSetActivity" url="$UI/OA/knowledge/process/simpleFolderSet/noticeFDSetActivity.a"/>  
+      <item label="公告发布" process="/OA/knowledge/process/simplePublishKnowledge/simplePublishKnowledgeProcess"
+        activity="noticePublishActivity" url="$UI/OA/knowledge/process/simplePublishKnowledge/noticePublishActivity.a"/>  
+      <item label="公告发布管理" process="/OA/knowledge/process/simplePublishKnowledgeManage/simplePublishKnowledgeManageProcess"
+        activity="noticePublishManageActivity" url="$UI/OA/knowledge/process/simplePublishKnowledgeManage/noticePublishManageActivity.a"/>  
+      <item label="公告查看" process="/OA/knowledge/process/simpleKnowledgeBase/simpleKnowledgeBaseProcess"
+        activity="noticeBaseActivity" url="$UI/OA/knowledge/process/simpleKnowledgeBase/noticeBaseActivity.a"/> 
+    </item>  
+    <item label="文件中心" device="pc"> 
+      <item label="文件栏目设置" process="/OA/knowledge/process/simpleFolderSet/simpleFolderSetProcess"
+        activity="docFDSetActivity" url="$UI/OA/knowledge/process/simpleFolderSet/docFDSetActivity.a"/>  
+      <item label="文件发布" process="/OA/knowledge/process/simplePublishKnowledge/simplePublishKnowledgeProcess"
+        activity="docPublishActivity" url="$UI/OA/knowledge/process/simplePublishKnowledge/docPublishActivity.a"/>  
+      <item label="文件发布管理" process="/OA/knowledge/process/simplePublishKnowledgeManage/simplePublishKnowledgeManageProcess"
+        activity="docPublishManageActivity" url="$UI/OA/knowledge/process/simplePublishKnowledgeManage/docPublishManageActivity.a"/>  
+      <item label="文件查看" process="/OA/knowledge/process/simpleKnowledgeBase/simpleKnowledgeBaseProcess"
+        activity="docBaseActivity" url="$UI/OA/knowledge/process/simpleKnowledgeBase/docBaseActivity.a"/> 
+    </item>  
+    <item label="规章制度" device="pc"> 
+      <item label="规章制度栏目设置" process="/OA/knowledge/process/simpleFolderSet/simpleFolderSetProcess"
+        activity="ruleFDSetActivity" url="$UI/OA/knowledge/process/simpleFolderSet/ruleFDSetActivity.a"/>  
+      <item label="规章制度发布" process="/OA/knowledge/process/simplePublishKnowledge/simplePublishKnowledgeProcess"
+        activity="rulePublishActivity" url="$UI/OA/knowledge/process/simplePublishKnowledge/rulePublishActivity.a"/>  
+      <item label="规章制度发布管理" process="/OA/knowledge/process/simplePublishKnowledgeManage/simplePublishKnowledgeManageProcess"
+        activity="rulePublishManageActivity" url="$UI/OA/knowledge/process/simplePublishKnowledgeManage/rulePublishManageActivity.a"/>  
+      <item label="规章制度查看" process="/OA/knowledge/process/simpleKnowledgeBase/simpleKnowledgeBaseProcess"
+        activity="ruleBaseActivity" url="$UI/OA/knowledge/process/simpleKnowledgeBase/ruleBaseActivity.a"/> 
+    </item>  
+    <item label="信息发布审批" display="hide" device="pc"> 
+      <item label="信息发布-申请" display="hide" process="/OA/knowledge/process/simplePublishKnowledge/simplePublishKnowledgeProcess"
+        activity="applyActivity" url="$UI/OA/knowledge/process/simplePublishKnowledge/applyActivity.a"/>  
+      <item label="信息发布-部门领导审批" display="hide" process="/OA/knowledge/process/simplePublishKnowledge/simplePublishKnowledgeProcess"
+        activity="deptApvActivity" url="$UI/OA/knowledge/process/simplePublishKnowledge/deptApvActivity.a"/>  
+      <item label="信息发布-主管领导审批" display="hide" process="/OA/knowledge/process/simplePublishKnowledge/simplePublishKnowledgeProcess"
+        activity="chargeApvActivity" url="$UI/OA/knowledge/process/simplePublishKnowledge/chargeApvActivity.a"/>  
+      <item label="信息发布-发布" display="hide" process="/OA/knowledge/process/simplePublishKnowledge/simplePublishKnowledgeProcess"
+        activity="publishActivity" url="$UI/OA/knowledge/process/simplePublishKnowledge/publishActivity.a"/> 
+    </item> 
+    
+        <item label="手机端首页" device="m" process="/OA/knowledge/process/knowledgeMobile/knowledgeMobileProcess"
+      activity="knowledgeMobileBaseActivity" url="$UI/OA/knowledge/process/knowledgeMobile/knowledgeMobileBaseActivity.a" display="hide"/>
+    <item label="新闻查看" device="m" process="/OA/knowledge/process/knowledgeMobile/knowledgeMobileProcess"
+      activity="knowledgeNewsMobileActivity" url="$UI/OA/knowledge/process/knowledgeMobile/knowledgeNewsMobileActivity.a" iconClass="icon-android-clock" display="hide"/>
+    <item label="公告查看" device="m" process="/OA/knowledge/process/knowledgeMobile/knowledgeMobileProcess"
+      activity="knowledgeNoticeMobileActivity" url="$UI/OA/knowledge/process/knowledgeMobile/knowledgeNoticeMobileActivity.a" iconClass="icon-android-clock" display="hide"/>
+    <item label="文件中心" device="m" process="/OA/knowledge/process/knowledgeMobile/knowledgeMobileProcess"
+      activity="knowledgeDocMobileActivity" url="$UI/OA/knowledge/process/knowledgeMobile/knowledgeDocMobileActivity.a" iconClass="icon-android-clock" display="hide"/>
+    
+  </item>  
+  
+
+</root>

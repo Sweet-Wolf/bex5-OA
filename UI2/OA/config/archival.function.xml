@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <item label="档案管理" iconClass="icon-ios7-browsers"> 
+    <item label="基础设置" device="pc"> 
+      <item label="全宗设置" process="/OA/archival/process/archivalFonds/archivalFondsProcess"
+        activity="startActivity" url="$UI/OA/archival/process/archivalFonds/startActivity.a"/>  
+      <item label="类目设置" process="/OA/archival/process/archivalCategory/archivalCategoryProcess"
+        activity="startActivity" url="$UI/OA/archival/process/archivalCategory/startActivity.a"/>
+    </item>  
+    <item label="档案提交" process="/OA/archival/process/archivalSubmit/archivalSubmitProcess"
+      activity="startActivity" url="$UI/OA/archival/process/archivalSubmit/startActivity.a" device="pc"/>
+    <item label="档案管理" process="/OA/archival/process/archivalManage/archivalManageProcess"
+      activity="startActivity" url="$UI/OA/archival/process/archivalManage/startActivity.a" device="pc"/>
+    <item label="档案查询" process="/OA/archival/process/archivalSearch/archivalSearchProcess"
+      activity="startActivity" url="$UI/OA/archival/process/archivalSearch/startActivity.a" device="pc"/>
+    <item display="solid" label="档案借阅" device="pc">
+      <item label="档案借阅申请" process="/OA/archival/process/archivalBorrowApply/archivalBorrowApplyProcess"
+        activity="startActivity" url="$UI/OA/archival/process/archivalBorrowApply/startActivity.a"/>
+      <item label="档案借阅通知" process="/OA/archival/process/archivalBorrowApply/archivalBorrowApplyProcess"
+        activity="noticeActivity" url="$UI/OA/archival/process/archivalBorrowApply/noticeActivity.a"
+        display="hide"/>
+      <item label="借阅申请" display="hide" process="/OA/archival/process/archivalBorrowApply/archivalBorrowApplyProcess"
+        activity="applyActivity" url="$UI/OA/archival/process/archivalBorrowApply/applyActivity.a"/>
+      <item label="档案室审批" display="hide" process="/OA/archival/process/archivalBorrowApply/archivalBorrowApplyProcess"
+        activity="directorActivity" url="$UI/OA/archival/process/archivalBorrowApply/directorActivity.a"/>
+      <item label="借阅确认" display="hide" process="/OA/archival/process/archivalBorrowApply/archivalBorrowApplyProcess"
+        activity="confirmActivity" url="$UI/OA/archival/process/archivalBorrowApply/confirmActivity.a"/>
+      <item label="申请人确认" display="hide" process="/OA/archival/process/archivalBorrowApply/archivalBorrowApplyProcess"
+        activity="applyConfirmActivity" url="$UI/OA/archival/process/archivalBorrowApply/applyConfirmActivity.a"/>
+      <item label="档案借阅查询" process="/OA/archival/process/archivalBorrowApplyQuery/archivalBorrowApplyQueryProcess"
+        activity="startActivity" url="$UI/OA/archival/process/archivalBorrowApplyQuery/startActivity.a"/>
+      <item label="借阅档案查阅" process="/OA/archival/process/archivalBorrowSearch/archivalBorrowSearchProcess"
+        activity="startActivity" url="$UI/OA/archival/process/archivalBorrowSearch/startActivity.a"/>
+      <item label="档案借阅历史查询" process="/OA/archival/process/archivalBorrowHistory/archivalBorrowHistoryProcess"
+        activity="startActivity" url="$UI/OA/archival/process/archivalBorrowHistory/startActivity.a"/>
+    </item>
+    <item label="档案借阅归还" process="/OA/archival/process/archivalBorrowReturn/archivalBorrowReturnProcess"
+      activity="startActivity" url="$UI/OA/archival/process/archivalBorrowReturn/startActivity.a" device="pc"/>
+    <item display="solid" label="档案销毁" device="pc">
+      <item label="档案销毁申请" process="/OA/archival/process/archivalDistoryApply/archivalDistoryApplyProcess"
+        activity="startActivity" url="$UI/OA/archival/process/archivalDistoryApply/startActivity.a"/>
+      <item label="档案销毁通知" process="/OA/archival/process/archivalDistoryApply/archivalDistoryApplyProcess"
+        activity="noticeActivity" url="$UI/OA/archival/process/archivalDistoryApply/noticeActivity.a"
+        display="hide"/>
+      <item label="销毁申请" display="hide" process="/OA/archival/process/archivalDistoryApply/archivalDistoryApplyProcess"
+        activity="applyActivity" url="$UI/OA/archival/process/archivalDistoryApply/applyActivity.a"/>
+      <item label="销毁审批" display="hide" process="/OA/archival/process/archivalDistoryApply/archivalDistoryApplyProcess"
+        activity="directorActivity" url="$UI/OA/archival/process/archivalDistoryApply/directorActivity.a"/>
+      <item label="销毁确认" display="hide" process="/OA/archival/process/archivalDistoryApply/archivalDistoryApplyProcess"
+        activity="confirmActivity" url="$UI/OA/archival/process/archivalDistoryApply/confirmActivity.a"/>
+      <item label="档案销毁查询" process="/OA/archival/process/archivalDistoryApplyQuery/archivalDistoryApplyQueryProcess"
+        activity="startActivity" url="$UI/OA/archival/process/archivalDistoryApplyQuery/startActivity.a"/>
+    </item>
+  </item> 
+</root>

@@ -1,0 +1,43 @@
+.panel-heading{
+	padding:3px;
+}
+.panel-heading.cbUruiu{
+	background-color:#fff;
+}
+.panel-footer{
+	padding:3px;
+	background-color:#fff;
+}
+
+.head-image{
+	width:50px;
+	height:50px;
+	border:1px solid #000;
+	border-radius:25px;
+	margin-left:10px;
+}
+.cal-month-box [class*="cal-cell"]{
+	min-height:40px;
+}
+.cal-month-day{
+	height:44px;
+}
+span[data-cal-date]{
+	margin-top:5px;
+	margin-right:5px;
+}
+.cal-month-day.cbUruiu{
+	height:45px;
+}
+.cal-month-box .cal-day-today span[data-cal-date]{
+	font-size:1.3em;
+}
+.media-middle{
+	vertical-align:top;
+}
+.media-left{
+	padding-top:9px;
+}
+.x-col,.x-row{
+	padding:0;
+}

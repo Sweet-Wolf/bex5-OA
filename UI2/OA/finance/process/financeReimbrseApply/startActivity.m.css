@@ -1,0 +1,7 @@
+.font-gray {color:gray}
+.font-bold {font-weight:bold}
+
+.input-group-addon:last-child{ 
+border:0;
+padding-right:0;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <item label="信息发布"> 
+    <item id="wNewAndPicPortlet" title="新闻" height="200px" type="func" url="$UI/OA/knowledge/process/knowledgePortlet/newsPic.a"
+      process="/OA/knowledge/process/knowledgePortlet/knowledgePortletProcess" activity="textPortletActivity"
+      refresh="true"> 
+      <more title="新闻查看" url="$UI/OA/knowledge/process/simpleKnowledgeBase/newsBaseActivity.a"
+        process="/OA/knowledge/process/simpleKnowledgeBase/simpleKnowledgeBaseProcess" activity="newsBaseActivity"
+        params="&amp;folderFullID=public/news"/> 
+    </item>  
+    <item id="wNoticePortlet" title="公告" height="200px" type="func" url="$UI/OA/knowledge/process/knowledgePortlet/noticePortlet.a"
+      process="/OA/knowledge/process/knowledgePortlet/knowledgePortletProcess" activity="textPortletActivity"
+      refresh="true"> 
+      <more title="公告" url="$UI/OA/knowledge/process/simpleKnowledgeBase/noticeBaseActivity.a"
+        process="/OA/knowledge/process/simpleKnowledgeBase/simpleKnowledgeBaseProcess" activity="noticeBaseActivity"
+        params="&amp;folderFullID=public/notice"/> 
+    </item>  
+   <!--  <item id="wDocPortlet" title="文件中心" height="180px" type="func" url="$UI/OA/knowledge/process/knowledgePortlet/docPortlet.a"
+      process="/OA/knowledge/process/knowledgePortlet/knowledgePortletProcess" activity="textPortletActivity"
+      refresh="true"> 
+      <more title="文件中心" url="$UI/OA/knowledge/process/knowledgeMore/knowledgeMoreActivity.a"
+        process="/OA/knowledge/process/knowledgeMore/knowledgeMoreProcess" activity="knowledgeMoreActivity"
+        params="&amp;folderFullID=public/doc"/> 
+    </item>  -->
+  </item>  
+  <item label="报表发布"> 
+    <item id="docReport" title="发文统计" height="180px" type="func" refresh="true"
+      process="/OA/doc/process/docSummaryReport/docSummaryReportProcess" activity="docPortal"
+      url="$UI/OA/doc/process/docSummaryReport/docPortal.a"/> 
+  </item> 
+</root>

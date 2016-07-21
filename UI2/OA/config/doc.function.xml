@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <item label="公文管理" iconClass="icon-ios7-browsers"> 
+    <item label="基础数据" device="pc"> 
+      <item label="公文紧急程度" process="/OA/doc/process/baseCode/docExigenceLevel/docExigenceLevelProcess"
+        activity="docExigenceLevelActivity" url="$UI/OA/doc/process/baseCode/docExigenceLevel/docExigenceLevelActivity.a"/>  
+      <item label="公文文种" process="/OA/doc/process/baseCode/docKind/docKindProcess"
+        activity="docKindActivity" url="$UI/OA/doc/process/baseCode/docKind/docKindActivity.a"/>  
+      <item label="发文机关代字" process="/OA/doc/process/baseCode/docOrganLetter/docOrganLetterProcess"
+        activity="docOrganLetterActivity" url="$UI/OA/doc/process/baseCode/docOrganLetter/docOrganLetterActivity.a"/>  
+      <item label="公文密级" process="/OA/doc/process/baseCode/docSecretLevel/docSecretLevelProcess"
+        activity="docSecretLevelActivity" url="$UI/OA/doc/process/baseCode/docSecretLevel/docSecretLevelActivity.a"/>  
+      <item label="公文行文方向" process="/OA/doc/process/baseCode/docSendDirect/docSendDirectProcess"
+        activity="docSendDirectActivity" url="$UI/OA/doc/process/baseCode/docSendDirect/docSendDirectActivity.a"/>  
+      <item label="来文类别" process="/OA/doc/process/baseCode/docSourceDocSort/docSourceDocSortProcess"
+        activity="docSourceDocSortActivity" url="$UI/OA/doc/process/baseCode/docSourceDocSort/docSourceDocSortActivity.a"/>  
+      <item label="来往单位维护" process="/OA/doc/process/baseCode/externalUnit/externalUnitProcess"
+        activity="externalUnitActivity" url="$UI/OA/doc/process/baseCode/externalUnit/externalUnitActivity.a"/> 
+    </item>  
+    <item label="主题词设置" device="pc"> 
+      <item label="首主题词" process="/OA/common/process/firstKeyWord/firstKeyWordProcess"
+        activity="mainActivity" url="/OA/common/process/firstKeyWord/mainActivity.a"/>  
+      <item label="自选主题词" process="/OA/common/process/secondKeyWord/secondKeyWordProcess"
+        activity="mainActivity" url="/OA/common/process/secondKeyWord/mainActivity.a"/>  
+      <item label="末主题词" process="/OA/common/process/endKeyWord/endKeyWordProcess"
+        activity="mainActivity" url="/OA/common/process/endKeyWord/mainActivity.a"/> 
+    </item>  
+    <item label="发文申请" process="/OA/doc/process/sendDoc/sendDocProcess" activity="startActivity"
+      url="$UI/OA/doc/process/sendDoc/startActivity.a" device="pc"/>  
+    <item label="拟稿" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="draftActivity" url="$UI/OA/doc/process/sendDoc/draftActivity.a"/>  
+    <item label="本部门审核" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="deptApproveActivity" url="$UI/OA/doc/process/sendDoc/deptApproveActivity.a"/>  
+    <item label="拟稿人处理" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="drafterActivity" url="$UI/OA/doc/process/sendDoc/drafterActivity.a"/>  
+    <item label="部门会签" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="meetingActivity" url="$UI/OA/doc/process/sendDoc/meetingActivity.a"/>  
+    <item label="部门内处理" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="deptdoActivity1" url="$UI/OA/doc/process/sendDoc/deptdoActivity1.a"/>  
+    <item label="秘书处理" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="secretaryDealActivity" url="$UI/OA/doc/process/sendDoc/secretaryDealActivity.a"/>  
+    <item label="核稿" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="checkActivity" url="$UI/OA/doc/process/sendDoc/checkActivity.a"/>  
+    <item label="领导签阅" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="reviewActivity" url="$UI/OA/doc/process/sendDoc/reviewActivity.a"/>  
+    <item label="部门会签" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="deptMeetingActivity" url="$UI/OA/doc/process/sendDoc/deptMeetingActivity.a"/>  
+    <item label="部门内处理" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="deptdoActivity2" url="$UI/OA/doc/process/sendDoc/deptdoActivity2.a"/>  
+    <item label="秘书处理" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="secretaryHandleActivity" url="$UI/OA/doc/process/sendDoc/secretaryHandleActivity.a"/>  
+    <item label="领导签发" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="signActivity" url="$UI/OA/doc/process/sendDoc/signActivity.a"/>  
+    <item label="文件编号" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="registerNumActivity" url="$UI/OA/doc/process/sendDoc/registerNumActivity.a"/>  
+    <item label="文件排版" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="stampActivity" url="$UI/OA/doc/process/sendDoc/stampActivity.a"/>  
+    <item label="用印、发布" display="hide" process="/OA/doc/process/sendDoc/sendDocProcess"
+      activity="dispenseActivity" url="$UI/OA/doc/process/sendDoc/dispenseActivity.a"/>  
+    <item label="签报" process="/OA/doc/process/signReport/signReportProcess"
+      activity="startActivity" url="$UI/OA/doc/process/signReport/startActivity.a" display="solid" device="pc"/>  
+    <item label="拟稿" display="hide" process="/OA/doc/process/signReport/signReportProcess"
+      activity="draftActivity" url="$UI/OA/doc/process/signReport/draftActivity.a"/>  
+    <item label="本部门审核" display="hide" process="/OA/doc/process/signReport/signReportProcess"
+      activity="checkActivity" url="$UI/OA/doc/process/signReport/checkActivity.a"/>  
+    <item label="拟稿人处理" display="hide" process="/OA/doc/process/signReport/signReportProcess"
+      activity="drafterDisposeActivity" url="$UI/OA/doc/process/signReport/drafterDisposeActivity.a"/>  
+    <item label="部门会签" display="hide" process="/OA/doc/process/signReport/signReportProcess"
+      activity="meetingActivity" url="$UI/OA/doc/process/signReport/meetingActivity.a"/>  
+    <item label="秘书处理" display="hide" process="/OA/doc/process/signReport/signReportProcess"
+      activity="secretaryActivity" url="$UI/OA/doc/process/signReport/secretaryActivity.a"/>  
+    <item label="领导签阅" display="hide" process="/OA/doc/process/signReport/signReportProcess"
+      activity="signActivity" url="$UI/OA/doc/process/signReport/signActivity.a"/>  
+    <item label="发文稿纸" process="/OA/doc/process/sendDocPaper/sendDocPaperProcess"
+      activity="startActivity" url="$UI/OA/doc/process/sendDocPaper/startActivity.a" device="pc"/>  
+    <item label="拟稿" display="hide" process="/OA/doc/process/sendDocPaper/sendDocPaperProcess"
+      activity="draftActivity" url="$UI/OA/doc/process/sendDocPaper/draftActivity.a"/>  
+    <item label="本部门审核" display="hide" process="/OA/doc/process/sendDocPaper/sendDocPaperProcess"
+      activity="deptApproveActivity" url="$UI/OA/doc/process/sendDocPaper/deptApproveActivity.a"/>  
+    <item label="拟稿人处理" display="hide" process="/OA/doc/process/sendDocPaper/sendDocPaperProcess"
+      activity="drafterActivity" url="$UI/OA/doc/process/sendDocPaper/drafterActivity.a"/>  
+    <item label="核稿" display="hide" process="/OA/doc/process/sendDocPaper/sendDocPaperProcess"
+      activity="checkActivity" url="$UI/OA/doc/process/sendDocPaper/checkActivity.a"/>  
+    <item label="秘书处理" display="hide" process="/OA/doc/process/sendDocPaper/sendDocPaperProcess"
+      activity="secretaryDealActivity" url="$UI/OA/doc/process/sendDocPaper/secretaryDealActivity.a"/>  
+    <item label="领导签发" display="hide" process="/OA/doc/process/sendDocPaper/sendDocPaperProcess"
+      activity="signActivity" url="$UI/OA/doc/process/sendDocPaper/signActivity.a"/>  
+    <item label="秘书处理" display="hide" process="/OA/doc/process/sendDocPaper/sendDocPaperProcess"
+      activity="secretaryHandleActivity" url="$UI/OA/doc/process/sendDocPaper/secretaryHandleActivity.a"/>  
+    <item label="文件编号" display="hide" process="/OA/doc/process/sendDocPaper/sendDocPaperProcess"
+      activity="registerNumActivity" url="$UI/OA/doc/process/sendDocPaper/registerNumActivity.a"/>  
+    <item label="文件排版" display="hide" process="/OA/doc/process/sendDocPaper/sendDocPaperProcess"
+      activity="stampActivity" url="$UI/OA/doc/process/sendDocPaper/stampActivity.a"/>  
+    <item label="用印、发布" display="hide" process="/OA/doc/process/sendDocPaper/sendDocPaperProcess"
+      activity="dispenseActivity" url="$UI/OA/doc/process/sendDocPaper/dispenseActivity.a"/>  
+    <item label="部门会签" display="hide" process="/OA/doc/process/sendDocPaper/sendDocPaperProcess"
+      activity="meetingActivity" url="$UI/OA/doc/process/sendDocPaper/meetingActivity.a"/>  
+    <item label="领导签阅" display="hide" process="/OA/doc/process/sendDocPaper/sendDocPaperProcess"
+      activity="reviewActivity" url="$UI/OA/doc/process/sendDocPaper/reviewActivity.a"/>  
+    <item label="收文阅批" process="/OA/doc/process/receiveDoc/receiveDocProcess"
+      activity="startActivity" url="$UI/OA/doc/process/receiveDoc/startActivity.a" device="pc"/>  
+    <item label="收文登记" display="hide" process="/OA/doc/process/receiveDoc/receiveDocProcess"
+      activity="regActivity" url="$UI/OA/doc/process/receiveDoc/regActivity.a"/>  
+    <item label="拟办" display="hide" process="/OA/doc/process/receiveDoc/receiveDocProcess"
+      activity="draftActivity" url="$UI/OA/doc/process/receiveDoc/draftActivity.a"/>  
+    <item label="秘书处理" display="hide" process="/OA/doc/process/receiveDoc/receiveDocProcess"
+      activity="secretaryActivity" url="$UI/OA/doc/process/receiveDoc/secretaryActivity.a"/>  
+    <item label="领导审批" display="hide" process="/OA/doc/process/receiveDoc/receiveDocProcess"
+      activity="leadApproveActivity" url="$UI/OA/doc/process/receiveDoc/leadApproveActivity.a"/>  
+    <item label="传阅" display="hide" process="/OA/doc/process/receiveDoc/receiveDocProcess"
+      activity="roundPerusalActivity" url="$UI/OA/doc/process/receiveDoc/roundPerusalActivity.a"/>  
+    <item label="主办" display="hide" process="/OA/doc/process/receiveDoc/receiveDocProcess"
+      activity="operatorActivity" url="$UI/OA/doc/process/receiveDoc/operatorActivity.a"/>  
+    <item label="主办部门处理" display="hide" process="/OA/doc/process/receiveDoc/receiveDocProcess"
+      activity="operatorDeptActivity" url="$UI/OA/doc/process/receiveDoc/operatorDeptActivity.a"/>  
+    <item label="协办" display="hide" process="/OA/doc/process/receiveDoc/receiveDocProcess"
+      activity="cooperativeActivity" url="$UI/OA/doc/process/receiveDoc/cooperativeActivity.a"/>  
+    <item label="协办部门处理" display="hide" process="/OA/doc/process/receiveDoc/receiveDocProcess"
+      activity="cooperativeDeptActivity" url="$UI/OA/doc/process/receiveDoc/cooperativeDeptActivity.a"/>  
+    <item label="公文查询" process="/OA/doc/process/docQuery/docQueryProcess" activity="docQueryActivity"
+      url="/OA/doc/process/docQuery/docQuery.a" device="pc"/>  
+    <item label="待阅公文" process="/OA/doc/process/readDocQuery/readDocQueryProcess"
+      activity="readDocQueryActivity" url="$UI/OA/doc/process/readDocQuery/readDocQuery.a" device="pc"/>  
+    <item label="待收公文" process="/OA/doc/process/receiveDocQuery/receiveDocQueryProcess"
+      activity="receiveDocQueryActivity" url="$UI/OA/doc/process/receiveDocQuery/receiveDocQuery.a" device="pc"/>  
+    <item label="公文统计报表" process="/OA/doc/process/docSummaryReport/docSummaryReportProcess"
+      activity="mainActivity" url="$UI/OA/doc/process/docSummaryReport/mainActivity.a" device="pc"/>  
+    <item label="我的常用语" process="/OA/common/process/commonWords/commonWordsProcess"
+      activity="mainActivity" url="$UI/OA/common/process/commonWords/mainActivity.a" device="pc"/>
+    <item label="待阅公文" process="/OA/doc/process/mobileReadDocQuery/mobileReadDocQueryProcess"
+      activity="mainActivity" url="$UI/OA/doc/process/mobileReadDocQuery/mainActivity.a" device="m" display="hide"/>
+  <item label="公文处理" device="m" process="/OA/doc/process/mobileDocDeal/mobileDocDealProcess" activity="mainActivity" url="$UI/OA/doc/process/mobileDocDeal/mainActivity.a"></item></item> 
+</root>

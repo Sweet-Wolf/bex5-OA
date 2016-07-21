@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <item label="个人办公管理" iconClass="icon-ios7-browsers"> 
+    <item label="日程管理"> 
+      <item label="我的日程" url="$UI/OA/schedule/process/mySchedule/mySchedule.w"
+        process="/OA/schedule/process/mySchedule/myScheduleProcess" activity="startActivity" device="pc"/>  
+      <item label="日程安排" url="$UI/OA/schedule/process/schedule/schedule.w" display="hide"
+        process="/OA/schedule/process/schedule/scheduleProcess" activity="startActivity"/>  
+      <item label="公开日程查询" url="$UI/OA/schedule/process/scheduleQuery/scheduleQuery.w"
+        process="/OA/schedule/process/scheduleQuery/scheduleQueryProcess" activity="startActivity" device="pc"/>  
+      <item label="日程安排管理" url="$UI/OA/schedule/process/scheduleManagement/scheduleManagement.w"
+        process="/OA/schedule/process/scheduleManagement/scheduleManagementProcess"
+        activity="startActivity" device="pc"/>  
+      <!-- 100% -->  
+      <item label="个人公开范围设置" url="$UI/OA/schedule/process/personalShare/personalShare.w"
+        process="/OA/schedule/process/personalShare/personalShareProcess" activity="startActivity" device="pc"/>  
+      <item label="系统公开范围设置" url="$UI/OA/schedule/process/systemShare/systemShare.w"
+        process="/OA/schedule/process/systemShare/systemShareProcess" activity="startActivity" device="pc"/>  
+      <item label="我的日程弹出框" process="/OA/schedule/process/schedule/scheduleProcess"
+        activity="startActivity" url="$UI/OA/schedule/process/schedule/startActivity.w"
+        display="hide"/>  
+      <item label="领导人员列表" process="/OA/schedule/process/especialPersonList/especialPersonListProcess"
+        activity="mainActivity" url="$UI/OA/schedule/process/especialPersonList/mainActivity.w" device="pc"/>  
+      <item label="领导日程安排" process="/OA/schedule/process/especialSchedule/especialScheduleProcess"
+        activity="mainActivity" url="$UI/OA/schedule/process/especialSchedule/mainActivity.w" device="pc"/>  
+      <item label="领导日程查看" process="/OA/schedule/process/especialScheduleShow/especialScheduleShowProcess"
+        activity="mainActivity" url="$UI/OA/schedule/process/especialScheduleShow/mainActivity.w" device="pc"/>  
+      <item label="日程管理" device="m" process="/OA/schedule/process/mobileSechedule/mobileSecheduleProcess"
+        activity="mainActivity" url="$UI/OA/schedule/process/mobileSechedule/mainActivity.m.a" display="hide"/>
+    </item>  
+    <item label="通讯录" device="pc"> 
+      <item label="内部通讯录" process="/OA/addressBook/process/addressBookSystem/addressBookSystemProcess"
+        activity="startActivity" url="$UI/OA/addressBook/process/addressBookSystem/mainActivity.a"/>  
+      <item label="个人通讯录" process="/OA/addressBook/process/addressBookPsnList/addressBookPsnListProcess"
+        activity="startActivity" url="$UI/OA/addressBook/process/addressBookPsnList/mainActivity.a"/> 
+    </item>  
+    <!--      <item label="文件柜">  -->  
+    <!--       <item label="个人文件柜" url="$UI/OA/fileCabinet/process/personalCabinet/mainActivity.w" -->  
+    <!--         process="/OA/fileCabinet/process/personalCabinet/personalCabinetProcess" activity="mainActivity"/>   -->  
+    <!--       <item label="部门文件柜" url="$UI/OA/fileCabinet/process/deptCabinet/mainActivity.w" -->  
+    <!--         process="/OA/fileCabinet/process/deptCabinet/deptCabinetProcess" activity="mainActivity"/>  -->  
+    <!--     </item> -->  
+    <!--<item display="solid" label="文档关联查看">
+      <item label="文档关联查看" process="/OA/common/process/personalCabinet/personalCabinetProcess"
+        activity="mainActivity" url="$UI/OA/common/process/personalCabinet/mainActivity.a"/>
+    </item>--> 
+  </item> 
+</root>

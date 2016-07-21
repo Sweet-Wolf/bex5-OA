@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:ns="http://www.justep.com/x5#" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xsl:template match="/">
+		<xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml"
+			xmlns:xforms="http://www.w3.org/2002/xforms"
+			xmlns:ev="http://www.w3.org/2001/xml-events"
+			xmlns:xxforms="http://orbeon.org/oxf/xml/xforms"
+			xmlns:xbl="http://www.w3.org/ns/xbl"
+			xmlns:f="http://orbeon.org/oxf/xml/formatting"
+			xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:widget="http://orbeon.org/oxf/xml/widget" xmlns="http://www.w3.org/1999/xhtml"
+			xmlns:exf="http://www.exforms.org/exf/1-0"
+			xmlns:ajx="http://www.ajaxforms.net/2006/ajx"
+			xmlns:justep="http://www.justep.com/x5#"
+			xmlns:ns="http://www.justep.com/x5#"
+			xmlns:xreport="http://www.justep.com/x5/xreport"
+			xmlns:xblcompliexblns="http://www.w3.org/ns/xbl"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema"
+			xsl:version="2.0">
+			<xhtml:head>
+				<xhtml:meta http-equiv="Media-Type" content="ajaxforms" />
+				<xhtml:script type="text/javascript" src="/base/base.js" />
+				<xhtml:script type="text/javascript" src="/form/form.js" />
+				<xhtml:style>
+					.title {
+						color:#056788;
+						face:黑体; 
+						font-weight:bold;
+						font-size:18pt;
+					}
+					
+					.describe {
+					color:#000000;
+						face:宋体; 
+						font-size:9pt;
+					}
+					
+					.question {
+					color:#000000;
+						face:宋体;
+					font-weight:bold;
+						font-size:9pt;
+					}
+					
+					.items {
+					color:#000000;
+						face:宋体; 
+						font-weight:bold;
+						font-size:9pt;
+					}
+					.questionSum {
+					font-style:normal;
+						font-variant:normal;
+					font-size:9pt;
+					face:黑体;
+						color:#494949;
+					}
+					
+					.itemsSum {
+						font-style:normal;
+					font-variant:normal;
+						font-size:9pt;
+						face:黑体;
+						color:#494949;
+					}
+					.processColor {
+					BACKGROUND-COLOR: #056788;
+					}
+				</xhtml:style>
+				<xhtml:title>调查问卷</xhtml:title>
+				<xhtml:script>
+					<xsl:value-of
+						select="concat('function setDescribu() {describuDiv.innerHTML = &quot;', replace(/root/data/*//root/queryPaper/root/data/rows/row/fDescribe, '&quot;', '\\&quot;'), '&quot;}')" />
+				</xhtml:script>
+			</xhtml:head>
+			<xhtml:body bgColor="#FFFFFF" onload="setDescribu();">
+				<xhtml:div style="height:100%;width:100%;">
+					<table width="100%">
+						<tr width="100%">
+							<td align="center" colspan="3">
+								<font class="title">
+									<xsl:value-of
+										select="/root/data/*/root/queryPaper/root/data/rows/row/fTitle" />
+								</font>
+							</td>
+						</tr>
+						<tr width="100%" height="100%" align="center">
+							<td width="10%"></td>
+							<td align="left" width="80%" style="solid #000000">
+								<span id="describuDiv"
+									style="text-align: left; display: block; padding-left: 10px;font-size:10pt;">
+								</span>
+							</td>
+							<td width="10%"></td>
+						</tr>
+					</table>
+					<table width="100%">
+						<tr width="100%">
+							<td width="50%"></td>
+							<td>
+								<label>
+									<font face="宋体" size="2">
+											<xsl:value-of select="'发布者：'" />
+									</font>
+									<font face="宋体" size="2" color="#056788">
+										<xsl:value-of
+											select="concat(/root/data/*/root/queryPaper/root/data/rows/row/fCreatePsnName,'       ',substring-before(./root/queryPaper/root/data/rows/row/fCreateTime,'T'))" />
+									</font>
+									<font face="宋体" size="2">
+											<xsl:value-of select="'公布方式：'" />
+									</font>
+									<font face="宋体" size="2" color="#056788">
+										<xsl:value-of
+											select="/root/data/*/root/queryPaper/root/data/rows/row/fPublicTypeName " />
+									</font>
+								</label>
+							</td>
+						</tr>
+					</table>
+					<hr style="color: #000000; height: 1px; background-color:#FFFF00"
+						noshade="noshade"
+						width="100%" />
+					<xhtml:table width="100%" border="1" cellspacing="0"
+						cellpadding="0"
+						style="border-width: 0px">
+						<xhtml:tr width="100%">
+							<xhtml:td width="10%"
+								style="border-style: none; border-width: medium"></xhtml:td>
+							<xhtml:td width="80%"
+								style="border-style: none; border-width: medium">
+								<xhtml:table width="100%" border="1" cellspacing="0"
+									cellpadding="0" style="border-width: 0px">
+									<xhtml:tr width="100%" height="25px" colspan="5">
+										<xhtml:td width="100%" colspan="5"
+											style="border-style: none; border-width: medium"></xhtml:td>
+									</xhtml:tr>
+									<xsl:call-template name="testQuestion">
+										<xsl:with-param name="rowCount" select="1" />
+										<xsl:with-param name="data" select="." />
+									</xsl:call-template>
+								</xhtml:table>
+							</xhtml:td>
+							<xhtml:td width="10%"
+								style="border-style: none; border-width: medium"></xhtml:td>
+						</xhtml:tr>
+					</xhtml:table>
+				</xhtml:div>
+			</xhtml:body>
+		</xhtml:html>
+	</xsl:template>
+	<xsl:template name="testQuestion" xmlns:xforms="http://www.w3.org/2002/xforms">
+		<xsl:param name="rowCount" />
+		<xsl:param name="data" />
+		<xsl:variable name="rowindex" select="number($rowCount)" />
+		<xsl:if
+			test="number($rowCount) &lt;= count($data/root/data/*/root/queryQuestion/root/data/rows/row)">
+			<xhtml:tr border="0">
+				<xhtml:td width="3%" style="border-style: none; border-width: medium"></xhtml:td>
+				<xhtml:td width="94%" colspan="2"
+					style="border-style: none; border-width: medium">
+					<font class="question">
+						<xsl:value-of
+							select="/root/data/*/root/queryQuestion/root/data/rows/row[$rowCount]/fContent" />
+					</font>
+					<font class="questionSum">
+						<xsl:value-of
+							select="concat('        (答题数:',/root/data/*/root/queryQuestion/root/data/rows/row[$rowCount]/fAnswerNum,'  比率:',/root/data/*/root/queryQuestion/root/data/rows/row[$rowCount]/fRate,'%)')" />
+					</font>
+				</xhtml:td>
+				<xhtml:td width="3%" style="border-style: none; border-width: medium">
+				</xhtml:td>
+			</xhtml:tr>
+			<xhtml:tr border="0">
+				<xhtml:td width="100%" height="20" colspan="5"
+					style="border-style: none; border-width: medium">
+				</xhtml:td>
+			</xhtml:tr>
+			<xhtml:tr>
+				<xhtml:td width="3%" style="border-style: none; border-width: medium"></xhtml:td>
+				<xhtml:td width="3%" style="border-style: none; border-width: medium"></xhtml:td>
+				<xhtml:td width="88%" style="border-style: none; border-width: medium">
+					<xhtml:table style="border-style: none; border-width: medium">
+						<xsl:for-each
+							select="/root/data/*/root/queryItems/root/data/rows/row[./fQuestionID=../../../../../queryQuestion/root/data/rows/row[$rowCount]/V_OA_VS_SumQuestion]">
+							<xhtml:tr>
+								<xhtml:td>
+									<font class="items">
+										<xsl:value-of select="fContent" />
+									</font>
+									<font class="itemsSum">
+										<xsl:value-of
+											select="concat('                      (选择数:',fINum,'         比率:',fRate,'%)')" />
+									</font>
+								</xhtml:td>
+								<xhtml:td>
+									<xhtml:table border="0" width="146" height="8"
+										cellspacing="0"
+										cellpadding="0"
+										style="border: 1px solid #000000; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">
+										<xhtml:tr>
+											<xsl:call-template name="processBar">
+												<xsl:with-param name="rateNum" select="fRate" />
+												<xsl:with-param name="rowCount" select="0" />
+											</xsl:call-template>
+										</xhtml:tr>
+									</xhtml:table>
+								</xhtml:td>
+							</xhtml:tr>
+						</xsl:for-each>
+					</xhtml:table>
+				</xhtml:td>
+				<xhtml:td width="3%" style="border-style: none; border-width: medium"></xhtml:td>
+				<xhtml:td width="3%" style="border-style: none; border-width: medium"></xhtml:td>
+			</xhtml:tr>
+			<xhtml:tr width="100%" height="25px" colspan="5">
+				<xhtml:td width="100%" colspan="5"
+					style="border-style: none; border-width: medium" height="24"></xhtml:td>
+			</xhtml:tr>
+			<xsl:call-template name="testQuestion">
+				<xsl:with-param name="rowCount" select="number($rowCount) + 1" />
+				<xsl:with-param name="data" select="$data" />
+			</xsl:call-template>
+		</xsl:if>
+	</xsl:template>
+	<xsl:template name="processBar" xmlns:xforms="http://www.w3.org/2002/xforms">
+		<xsl:param name="rateNum" />
+		<xsl:param name="rowCount" />
+		<xsl:if test="number($rowCount) &lt;= 19">
+			<xsl:if test="number($rateNum) &gt; number($rowCount) * 5">
+				<xhtml:td class="processColor" />
+			</xsl:if>
+			<xsl:if test="number($rateNum) &lt;= number($rowCount) * 5">
+				<xhtml:td />
+			</xsl:if>
+			<xsl:call-template name="processBar">
+				<xsl:with-param name="rateNum" select="$rateNum" />
+				<xsl:with-param name="rowCount" select="$rowCount + 1" />
+			</xsl:call-template>
+		</xsl:if>
+	</xsl:template>
+</xsl:stylesheet>

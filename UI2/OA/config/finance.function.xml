@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <item label="财务报销" iconClass="icon-ios7-browsers"> 
+    <item label="基础数据" device="pc"> 
+      <item label="费用类型" process="/OA/finance/process/financeCostType/financeCostTypeProcess"
+        activity="startActivity" url="$UI/OA/finance/process/financeCostType/startActivity.a"/>
+      <item label="借款类型" process="/OA/finance/process/financeLoanType/financeLoanTypeProcess"
+        activity="startActivity" url="$UI/OA/finance/process/financeLoanType/startActivity.a"/>
+    </item>  
+    <item display="solid" label="借款申请">
+      <item label="借款申请" process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+        activity="startActivity" url="$UI/OA/finance/process/financeLoanApply/startActivity.a" device="pc"/>
+      <item label="借款申请" process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+        activity="startActivity" url="$UI/OA/finance/process/financeLoanApply/listActivity.a" device="m" display="hide"/>
+      <item label="借款申请通知" process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+        activity="noticeActivity" url="$UI/OA/finance/process/financeLoanApply/noticeActivity.a"
+        display="hide"/>
+      <item label="借款申请" display="hide" process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+        activity="createActivity" url="$UI/OA/finance/process/financeLoanApply/createActivity.a"/>
+      <item label="部门审批" display="hide" process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+        activity="deptActivity" url="$UI/OA/finance/process/financeLoanApply/deptActivity.a"/>
+      <item label="财务主任" display="hide" process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+        activity="financeActivity" url="$UI/OA/finance/process/financeLoanApply/financeActivity.a"/>
+      <item label="财务出纳" display="hide" process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+        activity="cashiActivity" url="$UI/OA/finance/process/financeLoanApply/cashiActivity.a"/>
+      <item label="分管领导审批" display="hide" process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+        activity="chargeActivity" url="$UI/OA/finance/process/financeLoanApply/chargeActivity.a"/>
+      <item label="借款申请查询" process="/OA/finance/process/financeLoanApplyQuery/financeLoanApplyQueryProcess"
+        activity="startActivity" url="$UI/OA/finance/process/financeLoanApplyQuery/startActivity.a" device="pc"/>
+    </item>
+    <item display="solid" label="报销申请">
+      <item label="报销申请" process="/OA/finance/process/financeReimbrseApply/financeReimbrseApplyProcess"
+        activity="startActivity" url="$UI/OA/finance/process/financeReimbrseApply/startActivity.a" device="pc"/>
+        <item label="报销申请" process="/OA/finance/process/financeReimbrseApply/financeReimbrseApplyProcess"
+        activity="startActivity" url="$UI/OA/finance/process/financeReimbrseApply/listActivity.a" device="m" display="hide"/>
+      <item label="报销申请通知" process="/OA/finance/process/financeReimbrseApply/financeReimbrseApplyProcess"
+        activity="noticeActivity" url="$UI/OA/finance/process/financeReimbrseApply/noticeActivity.a"
+        display="hide"/>
+      <item label="报销申请" display="hide" process="/OA/finance/process/financeReimbrseApply/financeReimbrseApplyProcess"
+        activity="createActivity" url="$UI/OA/finance/process/financeReimbrseApply/createActivity.a"/>
+      <item label="部门领导审批" display="hide" process="/OA/finance/process/financeReimbrseApply/financeReimbrseApplyProcess"
+        activity="deptActivity" url="$UI/OA/finance/process/financeReimbrseApply/deptActivity.a"/>
+      <item label="分管领导审批" display="hide" process="/OA/finance/process/financeReimbrseApply/financeReimbrseApplyProcess"
+        activity="propertyActivity" url="$UI/OA/finance/process/financeReimbrseApply/propertyActivity.a"/>
+      <item label="财务出纳" display="hide" process="/OA/finance/process/financeReimbrseApply/financeReimbrseApplyProcess"
+        activity="cashiActivity" url="$UI/OA/finance/process/financeReimbrseApply/cashiActivity.a"/>
+      <item label="报销申请查询" process="/OA/finance/process/financeReimbrseApplyQuery/financeReimbrseApplyQueryProcess"
+        activity="startActivity" url="$UI/OA/finance/process/financeReimbrseApplyQuery/startActivity.a" device="pc"/>
+      <item label="费用类型统计" process="/OA/finance/process/financeReimbrseExcel/financeReimbrseExcelProcess"
+        activity="startActivity" url="$UI/OA/finance/process/financeReimbrseExcel/startActivity.a" device="pc"/>
+    </item>
+  </item> 
+</root>

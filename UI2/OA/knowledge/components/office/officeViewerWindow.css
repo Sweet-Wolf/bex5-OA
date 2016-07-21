@@ -1,0 +1,45 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+span {
+	font-size: 0.75em;
+	font-weight: 700;
+	color: #313334;
+}
+
+.tools {
+	margin-left: 7px;
+	margin-top: 7px;
+	margin-right: 7px;
+	margin-bottom: 7px;
+}
+
+.fieldLeft {
+	float: left;
+}
+
+.fieldRight {
+	float: right;
+}
+
+ul {
+	list-style-type: none;
+	margin: 1px 0px 5px 10px;
+	color: #ccc;
+}
+
+a {
+	color: #6b7b95;
+}
+
+a:focus, a:hover {
+	color: #666;
+}
+
+li {
+	font-size: 0.75em;
+}

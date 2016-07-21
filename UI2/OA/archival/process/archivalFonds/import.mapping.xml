@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mapping> 
+  <default-config> 
+    <sheet all="false" start="1" end="1"/>  
+    <row all="false" start="2" end="100"/> 
+  </default-config>  
+  <concept name="OA_AM_Fonds">  
+    <relation name="fFondsNO" value-type="string" cell-number="1"/>  
+    <relation name="fFondsName" value-type="string" cell-number="2"/>  
+    <relation name="fAllCategory" value-type="Integer" cell-number="3"/>  
+    <relation name="fOwnDeptName" value-type="string" cell-number="4"/>  
+ </concept> 
+</mapping>

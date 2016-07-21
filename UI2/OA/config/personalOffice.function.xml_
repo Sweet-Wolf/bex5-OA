@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <item label="个人办公管理"> 
+      
+    <item label="通讯录"> 
+      <item label="内部通讯录" process="/OA/addressBook/process/addressBookSystem/addressBookSystemProcess"
+        activity="startActivity" url="$UI/OA/addressBook/process/addressBookSystem/mainActivity.a"/>  
+      <item label="个人通讯录" process="/OA/addressBook/process/addressBookPsnList/addressBookPsnListProcess"
+        activity="startActivity" url="$UI/OA/addressBook/process/addressBookPsnList/mainActivity.a"/> 
+    </item>  
+     
+  </item> 
+</root>

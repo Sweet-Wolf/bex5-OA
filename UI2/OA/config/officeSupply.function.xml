@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <item label="办公用品管理" iconClass="icon-ios7-browsers"> 
+    <item label="基础设置" device="pc"> 
+      <item label="类别设置" process="/OA/officeSupplyConsumables/process/officeSupplyKindSet/officeSupplyKindSetProcess"
+        activity="officeSupplyKindSetActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyKindSet/officeSupplyKindSetActivity.a"/>  
+      <item label="计量单位设置" process="/OA/officeSupplyConsumables/process/officeSupplyUnitSet/officeSupplyUnitSetProcess"
+        activity="officeSupplyUnitSetActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyUnitSet/officeSupplyUnitSetActivity.a"/> 
+    </item>  
+    <item label="办公用品信息" process="/OA/officeSupplyConsumables/process/officeSupplyBaseInfo/officeSupplyBaseInfoProcess"
+      activity="officeSupplyBaseInfoActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyBaseInfo/officeSupplyBaseInfoActivity.a" device="pc"/>  
+    <item label="办公用品请购" device="pc"> 
+      <item label="办公用品请购申请" process="/OA/officeSupplyConsumables/process/officeSupplyBuyApply/officeSupplyBuyApplyProcess"
+        activity="startActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyBuyApply/startActivity.a"/>  
+      <item label="办公用品请购申请" display="hide" process="/OA/officeSupplyConsumables/process/officeSupplyBuyApply/officeSupplyBuyApplyProcess"
+        activity="buyApplyActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyBuyApply/buyApplyActivity.a"/>  
+      <item label="办公室主任审批" display="hide" process="/OA/officeSupplyConsumables/process/officeSupplyBuyApply/officeSupplyBuyApplyProcess"
+        activity="officeDirectorActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyBuyApply/officeDirectorActivity.a"/>  
+      <item label="财务处长会签" display="hide" process="/OA/officeSupplyConsumables/process/officeSupplyBuyApply/officeSupplyBuyApplyProcess"
+        activity="financeDirectorActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyBuyApply/financeDirectorActivity.a"/>  
+      <item label="总经理批准" display="hide" process="/OA/officeSupplyConsumables/process/officeSupplyBuyApply/officeSupplyBuyApplyProcess"
+        activity="managerApprovalActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyBuyApply/managerApprovalActivity.a"/>  
+      <item label="办公用品采购" display="hide" process="/OA/officeSupplyConsumables/process/officeSupplyBuyApply/officeSupplyBuyApplyProcess"
+        activity="procurementActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyBuyApply/procurementActivity.a"/>  
+      <item label="办公用品请购通知" display="hide" process="/OA/officeSupplyConsumables/process/officeSupplyBuyApply/officeSupplyBuyApplyProcess"
+        activity="noticeActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyBuyApply/noticeActivity.a"/>  
+      <item label="办公用品请购查询" process="/OA/officeSupplyConsumables/process/officeSupplyBuyApplyQuery/officeSupplyBuyApplyQueryProcess"
+        activity="buyApplyQueryActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyBuyApplyQuery/officeSupplyBuyApplyQuery.a"/> 
+    </item>  
+    <item label="办公用品领用"> 
+      <item label="领用申请" process="/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeSupplyUseApplyProcess"
+        activity="startActivity" url="/OA/officeSupplyConsumables/process/officeSupplyUseApply/startActivity.a" device="pc"/>  
+      <item label="办公用品领用申请" display="hide" process="/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeSupplyUseApplyProcess"
+        activity="useApplyActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyUseApply/useApplyActivity.a"/>  
+      <item label="部门长审批" display="hide" process="/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeSupplyUseApplyProcess"
+        activity="deptHeaderActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyUseApply/deptHeaderActivity.a"/>  
+      <item label="办公用品人员审批" display="hide" process="/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeSupplyUseApplyProcess"
+        activity="officeStaffActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeStaffActivity.a"/>  
+      <item label="办公室主任审核" display="hide" process="/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeSupplyUseApplyProcess"
+        activity="officeDirectorActivity" url="/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeDirectorActivity.a"/>  
+      <item label="发放" display="hide" process="/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeSupplyUseApplyProcess"
+        activity="releaseActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyUseApply/releaseActivity.a"/>  
+      <item label="领用通知" display="hide" process="/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeSupplyUseApplyProcess"
+        activity="noticeActivity" url="/OA/officeSupplyConsumables/process/officeSupplyUseApply/noticeActivity.a"/>  
+      <item label="领用查询" process="/OA/officeSupplyConsumables/process/officeSupplyUseApplyQuery/officeSupplyUseApplyQueryProcess"
+        activity="useApplyQueryActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyUseApplyQuery/officeSupplyUseApplyQuery.a" device="pc"/>  
+      <item label="领用管理" process="/OA/officeSupplyConsumables/process/officeSupplyUseApplyQuery/officeSupplyUseApplyQueryProcess"
+        activity="useApplyQueryActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyUseApplyQuery/useApplyQueryActivity.a" device="m" display="hide"/>  
+      <item label="领用明细查询" process="/OA/officeSupplyConsumables/process/officeSupplyUseApplyDetailQuery/officeSupplyUseApplyDetailQueryProcess"
+        activity="useApplyDetailQueryActivity" url="$UI/OA/officeSupplyConsumables/process/officeSupplyUseApplyDetailQuery/officeSupplyUseApplyDetailQuery.a" device="pc"/> 
+    </item>  
+    <item label="领用登记" process="/OA/officeSupplyConsumables/process/officeSupplyUseRegister/officeSupplyUseRegisterProcess"
+      activity="mainActivity" url="/OA/officeSupplyConsumables/process/officeSupplyUseRegister/officeSupplyUseRegisterActivity.a" device="pc"/>  
+    <item label="办公物品统计" device="pc"> 
+      <item label="办公物品审批统计" process="/OA/officeSupplyConsumables/process/officeSummaryReport/officeSummaryReportProcess"
+        activity="mainActivity" url="/OA/officeSupplyConsumables/process/officeSummaryReport/mainActivity.a"/>  
+      <item label="发放汇总-按类别" process="/OA/officeSupplyConsumables/process/officeReleaseSummaryOfKind/officeReleaseSummaryOfKindProcess"
+        activity="startActivity" url="/OA/officeSupplyConsumables/process/officeReleaseSummaryOfKind/mainActivity.a"/>  
+      <item label="发放汇总-按部门" process="/OA/officeSupplyConsumables/process/officeReleaseSummaryOfDept/officeReleaseSummaryOfDeptProcess"
+        activity="startActivity" url="/OA/officeSupplyConsumables/process/officeReleaseSummaryOfDept/mainActivity.a"/>  
+      <item label="发放汇总明细" process="/OA/officeSupplyConsumables/process/officeReleaseSummaryDetail/officeReleaseSummaryDetailProcess"
+        activity="startActivity" url="/OA/officeSupplyConsumables/process/officeReleaseSummaryDetail/mainActivity.a"/> 
+    </item> 
+  </item> 
+</root>

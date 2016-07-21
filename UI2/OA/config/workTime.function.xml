@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+  <item display="solid" label="考勤管理" iconClass="icon-ios7-browsers">
+    <item display="solid" label="基础数据" device="pc">
+      <item label="请假类型设置" process="/OA/workTime/process/leavetype/leavetypeProcess"
+        activity="mainActivity" url="$UI/OA/workTime/process/leavetype/mainActivity.a"/>
+      <item label="假期设定" process="/OA/workTime/process/holiday/holidayProcess"
+        activity="mainActivity" url="$UI/OA/workTime/process/holiday/mainActivity.a"/>
+    </item>
+    <item label="年假管理" process="/OA/workTime/process/Vacation/vacationProcess"
+      activity="mainActivity" url="$UI/OA/workTime/process/Vacation/mainActivity.a" device="pc"/>
+    <item display="solid" label="请假申请">
+      <item label="请假申请" process="/OA/workTime/process/leave/leaveProcess" activity="mainActivity"
+        url="$UI/OA/workTime/process/leave/listActivity.a" device="m" display="hide"/>
+        <item label="请假申请" process="/OA/workTime/process/leave/leaveProcess" activity="mainActivity"
+        url="$UI/OA/workTime/process/leave/mainActivity.a" device="pc"/>
+      <item label="请假申请" display="hide" process="/OA/workTime/process/leave/leaveProcess"
+        activity="bizActivity1" url="$UI/OA/workTime/process/leave/bizActivity1.a" device="pc" />
+      <item label="请假申请审批" display="hide" process="/OA/workTime/process/leave/leaveProcess"
+        activity="bizActivity2" url="$UI/OA/workTime/process/leave/bizActivity2.a"/>
+      <item label="销假确认" process="/OA/workTime/process/leave_sure/leave_sureProcess"
+        activity="mainActivity" url="$UI/OA/workTime/process/leave_sure/mainActivity.a" device="pc"/>
+      <item label="请假申请查询" process="/OA/workTime/process/leavequery/leavequeryProcess"
+        activity="mainActivity" url="$UI/OA/workTime/process/leavequery/mainActivity.a" device="pc"/>
+    </item>
+    <item display="solid" label="出差申请">
+      <item label="出差申请" process="/OA/workTime/process/evection/evectionProcess"
+        activity="mainActivity" url="$UI/OA/workTime/process/evection/listActivity.a" device="m" display="hide"/>
+      <item label="出差申请" process="/OA/workTime/process/evection/evectionProcess"
+        activity="mainActivity" url="$UI/OA/workTime/process/evection/mainActivity.a" device="pc"/>
+        
+      <item label="出差申请" display="hide" process="/OA/workTime/process/evection/evectionProcess"
+        activity="bizActivity1" url="$UI/OA/workTime/process/evection/bizActivity1.a"/>
+      <item label="出差申请审批" display="hide" process="/OA/workTime/process/evection/evectionProcess"
+        activity="bizActivity2" url="$UI/OA/workTime/process/evection/bizActivity2.a"/>
+      <item label="出差确认" process="/OA/workTime/process/evecsure/evecsureProcess"
+        activity="mainActivity" url="$UI/OA/workTime/process/evecsure/mainActivity.a" device="pc"/>
+      <item label="出差申请查询" process="/OA/workTime/process/evecquery/evecqueryProcess"
+        activity="mainActivity" url="$UI/OA/workTime/process/evecquery/mainActivity.a" device="pc"/>
+    </item>
+    <item display="solid" label="外出申请">
+      <item label="外出申请" process="/OA/workTime/process/outApply/outApplyProcess"
+        activity="mainActivity" url="$UI/OA/workTime/process/outApply/mainActivity.a" device="pc"/>
+      <item label="外出申请" process="/OA/workTime/process/outApply/outApplyProcess"
+        activity="mainActivity" url="$UI/OA/workTime/process/outApply/listActivity.a" device="m" display="hide"/>
+      <item label="外出申请" display="hide" process="/OA/workTime/process/outApply/outApplyProcess"
+        activity="bizActivity1" url="$UI/OA/workTime/process/outApply/bizActivity1.a"/>
+      <item label="外出申请审批" display="hide" process="/OA/workTime/process/outApply/outApplyProcess"
+        activity="bizActivity2" url="$UI/OA/workTime/process/outApply/bizActivity2.a"/>
+      <item label="人事部审批" display="hide" process="/OA/workTime/process/outApply/outApplyProcess"
+        activity="bizActivity3" url="$UI/OA/workTime/process/outApply/bizActivity3.a"/>
+      <item label="外出确认" process="/OA/workTime/process/outYes/outYesProcess"
+        activity="mainActivity" url="$UI/OA/workTime/process/outYes/mainActivity.a" device="pc"/>
+      <item label="外出申请查询" process="/OA/workTime/process/outQuery/outQueryProcess"
+        activity="mainActivity" url="$UI/OA/workTime/process/outQuery/mainActivity.a" device="pc"/>
+    </item>
+    <item display="solid" label="补签申请" device="pc">
+      <item label="补签申请" process="/OA/workTime/process/repairApply/repairApplyProcess"
+        activity="mainActivity" url="$UI/OA/workTime/process/repairApply/mainActivity.a"/>
+      <item label="补签申请" display="hide" process="/OA/workTime/process/repairApply/repairApplyProcess"
+        activity="bizActivity1" url="$UI/OA/workTime/process/repairApply/bizActivity1.a"/>
+      <item label="补签申请审批" display="hide" process="/OA/workTime/process/repairApply/repairApplyProcess"
+        activity="bizActivity2" url="$UI/OA/workTime/process/repairApply/bizActivity2.a"/>
+      <item label="人事部审批" display="hide" process="/OA/workTime/process/repairApply/repairApplyProcess"
+        activity="bizActivity3" url="$UI/OA/workTime/process/repairApply/bizActivity3.a"/>
+      <item label="补签申请查询" process="/OA/workTime/process/repairQuery/repairQueryProcess"
+        activity="mainActivity" url="$UI/OA/workTime/process/repairQuery/mainActivity.a"/>
+    </item>
+    
+  </item>
+</root>

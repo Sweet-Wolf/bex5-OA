@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <item display="solid" label="常用办公管理" iconClass="icon-ios7-browsers"> 
+    <item display="solid" label="印章管理"> 
+      <item display="solid" label="基础数据" device="pc"> 
+        <item label="印章类别" process="/OA/signature/process/signatureType/signatureTypeProcess"
+          activity="startActivity" url="$UI/OA/signature/process/signatureType/signatureType.a"/> 
+      </item>  
+      <item label="印章管理" process="/OA/signature/process/signatureApplyQuery/signatureApplyQueryProcess"
+        activity="startActivity" url="$UI/OA/signature/process/signatureApply/listActivity.a"
+        device="m" display="hide"/>  
+      <item label="印章申请查询" process="/OA/signature/process/signatureApplyQuery/signatureApplyQueryProcess"
+        activity="startActivity" url="$UI/OA/signature/process/signatureApplyQuery/signatureApplyQuery.a"
+        device="pc"/>  
+      <item label="印章申请" display="hide" process="/OA/signature/process/signatureApply/signatureApplyProcess"
+        activity="createSignatureActivity" url="$UI/OA/signature/process/signatureApply/createSignatureActivity.a"/>  
+      <item label="部门审批" display="hide" process="/OA/signature/process/signatureApply/signatureApplyProcess"
+        activity="managerProcessSignatureActivity" url="$UI/OA/signature/process/signatureApply/managerProcessSignatureActivity.a"/>  
+      <item label="签收" display="hide" process="/OA/signature/process/signatureApply/signatureApplyProcess"
+        activity="managerDealActivity" url="$UI/OA/signature/process/signatureApply/managerDealActivity.a"/>  
+      <item label="办公室主任审批" display="hide" process="/OA/signature/process/signatureApply/signatureApplyProcess"
+        activity="chargeActivity" url="$UI/OA/signature/process/signatureApply/chargeActivity.a"/>  
+      <item label="主管领导批示" display="hide" process="/OA/signature/process/signatureApply/signatureApplyProcess"
+        activity="headMangerActivity" url="$UI/OA/signature/process/signatureApply/headMangerActivity.a"/>  
+      <item label="印章使用申请" process="/OA/signature/process/signatureApply/signatureApplyProcess"
+        activity="startActivity" url="$UI/OA/signature/process/signatureApply/startActivity.a"
+        device="pc"/>  
+      <item label="印章使用申请通知" process="/OA/signature/process/signatureApply/signatureApplyProcess"
+        activity="noticeActivity" url="$UI/OA/signature/process/signatureApply/noticeActivity.a"
+        display="hide"/> 
+    </item>  
+    <item display="solid" label="事务办理" device="pc"> 
+      <item label="事务办理申请" process="/OA/flowLanch/process/flowLanch/flowLanchProcess"
+        activity="startActivity" url="$UI/OA/flowLanch/process/flowLanch/startActivity.a"/>  
+      <item label="流程发起" display="hide" process="/OA/flowLanch/process/flowLanch/flowLanchProcess"
+        activity="flowLanchApplyActivity" url="$UI/OA/flowLanch/process/flowLanch/flowLanchApplyActivity.a"/>  
+      <item label="流程处理" display="hide" process="/OA/flowLanch/process/flowLanch/flowLanchProcess"
+        activity="flowDisposeActivity" url="$UI/OA/flowLanch/process/flowLanch/flowDisposeActivity.a"/>  
+      <item label="事务办理申请查询" process="/OA/flowLanch/process/flowLanchQuery/flowLanchQueryProcess"
+        activity="startActivity" url="$UI/OA/flowLanch/process/flowLanchQuery/startActivity.a"/>  
+      <item label="事务办理申请详细" process="/OA/flowLanch/process/flowLanchDetail/flowLanchDetailProcess"
+        activity="startActivity" url="$UI/OA/flowLanch/process/flowLanchDetail/startActivity.a"
+        display="hide"/> 
+    </item>  
+    <item display="solid" label="问卷调查" device="pc"> 
+      <item label="调查发布" process="/OA/survey/process/surveySend/surveySendProcess"
+        activity="surveySendActivity" url="$UI/OA/survey/process/surveySend/surveySendActivity.a"/>  
+      <item label="发布明细" process="/OA/survey/process/surveySend/surveySendProcess"
+        activity="surveyPaperDetailView" url="$UI/OA/survey/process/surveySend/surveyPaperDetailView.a"
+        display="hide"/>  
+      <item label="调查问卷" process="/OA/survey/process/surveyAnswer/surveyAnswerProcess"
+        activity="surveyAnswerActivity" url="$UI/OA/survey/process/surveyAnswer/surveyAnswerActivity.a"/>  
+      <item label="调查统计" process="/OA/survey/process/surveySummary/surveySummaryProcess"
+        activity="surveySummaryActivity" url="$UI/OA/survey/process/surveySummary/surveySummaryActivity.a"/> 
+    </item> 
+  </item> 
+</root>

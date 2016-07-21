@@ -1,0 +1,25 @@
+.spanMar{
+	display:inline-block;
+	margin-top:2%;
+	
+}
+.listColor{
+	background-color:color:#808080;
+	color:#808080;
+}
+.hideListDiv{
+	display:none;
+}
+.borders{
+	border-bottom:1px solid #dddddd;
+}
+.media-object{
+	width:50px;
+	height:50px;
+}
+.x-card.btn-group .btn.active{
+	border-top:2px solid #ecca3e;
+}
+.x-card.btn-group .btn{
+	border-top:1px solid #ddd;
+}

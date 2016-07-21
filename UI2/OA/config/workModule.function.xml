@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<item display="solid" label="我的工作" iconClass="icon-ios7-browsers">
+
+		<item label="审批"
+			process="/OA/ExaminationApproval/process/ExaminationApproval/examinationApprovalProcess"
+			activity="mainActivity"
+			url="$UI/OA/ExaminationApproval/process/ExaminationApproval/mainActivity.a"
+			display="solid" device="m" iconClass="icon-social-buffer" color="#FF8040"></item>
+		<item label="工作日志" process="/OA/workLog/process/logDetail/logDetailProcess"
+			activity="logDetail" url="$UI/OA/workLog/process/logDetail/logDetail.a"
+			display="solid" device="m" iconClass="icon-document-text" color="#00B987"></item>
+		<item label="工作日历"
+			process="/OA/schedule/process/workCalendar/process/workCalendar/workCalendarProcess"
+			activity="mainActivity"
+			url="$UI/OA/schedule/process/workCalendar/process/workCalendar/mainActivity.a"
+			display="solid" device="m" iconClass="icon-calendar" color="#FC3FA8"></item>
+		<item label="签到" process="/OA/sign/process/sign/signProcess"
+			activity="mainActivity" url="$UI/OA/sign/process/sign/mainActivity.a"
+			display="solid" device="m" iconClass="icon-android-location" color="#00FFFF"></item>
+		<item label="考勤打卡" process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="attendanceActivity" url="$UI/OA/attendance/process/attendance/attendanceActivity.a"
+			display="solid" device="m" iconClass="icon-compose" color="#3F9EFC"></item>
+
+		<item label="日程"
+			process="/OA/schedule/process/mobileSechedule/mobileSecheduleProcess"
+			activity="mainActivity" url="$UI/OA/schedule/process/mobileSechedule/mainActivity.a"
+			display="solid" device="m" iconClass="icon-android-storage" color="#C3EE6B"></item>
+		<item label="公告"
+			process="/OA/knowledge/process/knowledgeMobile/knowledgeMobileProcess"
+			activity="knowledgeNoticeMobileActivity"
+			url="$UI/OA/knowledge/process/knowledgeMobile/knowledgeNoticeMobileActivity.a"
+			display="solid" device="m" iconClass="icon-android-clock" color="#FFC90E"></item>
+		<item label="待办任务" process="/SA/task/taskView/taskViewProcess"
+			activity="mainActivity" url="$UI/SA/task/taskView/waitActivity.a"
+			iconClass="icon-android-alarm" color="#bbbbbb" display="hide" device="m" />
+		<item label="提交任务" process="/SA/task/taskView/taskViewProcess"
+			activity="mainActivity" url="$UI/SA/task/taskView/submitActivity.a"
+			iconClass="icon-android-clock" color="#bbbbbb" display="hide" device="m" />
+		<item label="新闻"
+			process="/OA/knowledge/process/knowledgeMobile/knowledgeMobileProcess"
+			activity="knowledgeNewsMobileActivity"
+			url="$UI/OA/knowledge/process/knowledgeMobile/knowledgeNewsMobileActivity.a"
+			display="solid" device="m" iconClass="icon-android-clock"></item>
+		<item label="文件"
+			process="/OA/knowledge/process/knowledgeMobile/knowledgeMobileProcess"
+			activity="knowledgeDocMobileActivity"
+			url="$UI/OA/knowledge/process/knowledgeMobile/knowledgeDocMobileActivity.a"
+			display="solid" device="m" iconClass="icon-android-clock"></item>
+		<item label="任务" process="/SA/task/workTask/workTaskProcess"
+			activity="mainActivity" url="$UI/SA/task/workTask/mainActivity.a"
+			display="solid" device="m" iconClass="icon-android-clock" />
+		<item label="工作日报" process="/OA/workLog/process/workDaily/workDailyProcess"
+			activity="mainActivity" url="$UI/OA/workLog/process/workDaily/mainActivity.a"
+			display="hide" device="m"></item>
+
+		<item label="工作周报" process="/OA/workLog/process/WorkWeekly/workWeeklyProcess"
+			activity="mainActivity" url="$UI/OA/workLog/process/WorkWeekly/mainActivity.a"
+			display="hide" device="m"></item>
+		<item label="工作月报" process="/OA/workLog/process/Workmonthly/workmonthlyProcess"
+			activity="mainActivity" url="$UI/OA/workLog/process/Workmonthly/mainActivity.a"
+			display="hide" device="m"></item>
+		<item label="工作报表"
+			process="/OA/workLog/process/workLogReport/workLogReportProcess"
+			activity="mainActivity" url="$UI/OA/workLog/process/workLogReport/mainActivity.a"
+			display="hide" device="m"></item>
+
+		<item label="出差申请" process="/OA/workTime/process/evection/evectionProcess"
+			activity="mainActivity" url="$UI/OA/workTime/process/evection/mainActivity.a"
+			display="hide" device="m"></item>
+		<item label="出差申请" display="hide"
+			process="/OA/workTime/process/evection/evectionProcess" activity="bizActivity1"
+			url="$UI/OA/workTime/process/evection/bizActivity1.a" device="m"></item>
+		<item label="出差申请审批" display="hide"
+			process="/OA/workTime/process/evection/evectionProcess" activity="bizActivity2"
+			url="$UI/OA/workTime/process/evection/bizActivity2.a" device="m"></item>
+		<item label="请假申请" process="/OA/workTime/process/leave/leaveProcess"
+			activity="mainActivity" url="$UI/OA/workTime/process/leave/mainActivity.a"
+			display="hide" device="m"></item>
+		<item label="请假申请" display="hide"
+			process="/OA/workTime/process/leave/leaveProcess" activity="bizActivity1"
+			url="$UI/OA/workTime/process/leave/bizActivity1.a" device="m"></item>
+		<item label="请假申请审批" display="hide"
+			process="/OA/workTime/process/leave/leaveProcess" activity="bizActivity2"
+			url="$UI/OA/workTime/process/leave/bizActivity2.a" device="m"></item>
+		<item label="借款申请"
+			process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+			activity="startActivity" url="$UI/OA/finance/process/financeLoanApply/startActivity.a"
+			display="hide" device="m"></item>
+		<item label="借款申请通知"
+			process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+			activity="noticeActivity" url="$UI/OA/finance/process/financeLoanApply/noticeActivity.a"
+			display="hide" device="m"></item>
+		<item label="借款申请" display="hide"
+			process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+			activity="createActivity" url="$UI/OA/finance/process/financeLoanApply/createActivity.a"
+			device="m"></item>
+		<item label="部门审批" display="hide"
+			process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+			activity="deptActivity" url="$UI/OA/finance/process/financeLoanApply/deptActivity.a"
+			device="m"></item>
+		<item label="财务主任" display="hide"
+			process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+			activity="financeActivity" url="$UI/OA/finance/process/financeLoanApply/financeActivity.a"
+			device="m"></item>
+		<item label="财务出纳" display="hide"
+			process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+			activity="cashiActivity" url="$UI/OA/finance/process/financeLoanApply/cashiActivity.a"
+			device="m"></item>
+		<item label="分管领导审批" display="hide"
+			process="/OA/finance/process/financeLoanApply/financeLoanApplyProcess"
+			activity="chargeActivity" url="$UI/OA/finance/process/financeLoanApply/chargeActivity.a"
+			device="m"></item>
+		<item label="会议室使用申请"
+			process="/OA/meeting/process/boardroomUseApply/boardroomUseApplyProcess"
+			activity="useApply" url="$UI/OA/meeting/process/boardroomUseApply/useApply.a"
+			display="hide" device="m"></item>
+		<item label="会议室使用申请" display="hide"
+			process="/OA/meeting/process/boardroomUseApply/boardroomUseApplyProcess"
+			activity="useApplyActivity"
+			url="$UI/OA/meeting/process/boardroomUseApply/useApplyActivity.a"
+			device="m"></item>
+		<item label="会议室使用审批" display="hide"
+			process="/OA/meeting/process/boardroomUseApply/boardroomUseApplyProcess"
+			activity="useApproveActivity"
+			url="$UI/OA/meeting/process/boardroomUseApply/useApproveActivity.a"
+			device="m"></item>
+		<item label="会议室使用安排" display="hide"
+			process="/OA/meeting/process/boardroomUseApply/boardroomUseApplyProcess"
+			activity="useArrangeActivity"
+			url="$UI/OA/meeting/process/boardroomUseApply/useArrangeActivity.a"
+			device="m"></item>
+		<item label="办公用品领用申请"
+			process="/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeSupplyUseApplyProcess"
+			activity="startActivity"
+			url="$UI/OA/officeSupplyConsumables/process/officeSupplyUseApply/startActivity.a"
+			display="hide" device="m"></item>
+		<item label="办公用品领用通知"
+			process="/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeSupplyUseApplyProcess"
+			activity="noticeActivity"
+			url="$UI/OA/officeSupplyConsumables/process/officeSupplyUseApply/noticeActivity.a"
+			display="hide" device="m"></item>
+		<item label="领用申请" display="hide"
+			process="/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeSupplyUseApplyProcess"
+			activity="useApplyActivity"
+			url="$UI/OA/officeSupplyConsumables/process/officeSupplyUseApply/useApplyActivity.a"
+			device="m"></item>
+		<item label="部门领导审批" display="hide"
+			process="/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeSupplyUseApplyProcess"
+			activity="deptHeaderActivity"
+			url="$UI/OA/officeSupplyConsumables/process/officeSupplyUseApply/deptHeaderActivity.a"
+			device="m"></item>
+		<item label="签收" display="hide"
+			process="/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeSupplyUseApplyProcess"
+			activity="releaseActivity"
+			url="$UI/OA/officeSupplyConsumables/process/officeSupplyUseApply/releaseActivity.a"
+			device="m"></item>
+		<item label="印章申请"
+			process="/OA/signature/process/signatureApply/signatureApplyProcess"
+			activity="startActivity" url="$UI/OA/signature/process/signatureApply/startActivity.a"
+			display="hide" device="m"></item>
+		<item label="印章使用申请通知"
+			process="/OA/signature/process/signatureApply/signatureApplyProcess"
+			activity="noticeActivity" url="$UI/OA/signature/process/signatureApply/noticeActivity.a"
+			display="hide" device="m"></item>
+		<item label="印章使用申请"
+			process="/OA/signature/process/signatureApply/signatureApplyProcess"
+			activity="detailActivity" url="$UI/OA/signature/process/signatureApply/detailActivity.a"
+			display="hide" device="m"></item>
+		<item label="印章申请" display="hide"
+			process="/OA/signature/process/signatureApply/signatureApplyProcess"
+			activity="createSignatureActivity"
+			url="$UI/OA/signature/process/signatureApply/createSignatureActivity.a"
+			device="m"></item>
+		<item label="部门审批" display="hide"
+			process="/OA/signature/process/signatureApply/signatureApplyProcess"
+			activity="managerProcessSignatureActivity"
+			url="$UI/OA/signature/process/signatureApply/managerProcessSignatureActivity.a"
+			device="m"></item>
+		<item label="签收" display="hide"
+			process="/OA/signature/process/signatureApply/signatureApplyProcess"
+			activity="managerDealActivity"
+			url="$UI/OA/signature/process/signatureApply/managerDealActivity.a"
+			device="m"></item>
+		<item label="办公室主任审批" display="hide"
+			process="/OA/signature/process/signatureApply/signatureApplyProcess"
+			activity="chargeActivity" url="$UI/OA/signature/process/signatureApply/chargeActivity.a"
+			device="m"></item>
+		<item label="主管领导批示" display="hide"
+			process="/OA/signature/process/signatureApply/signatureApplyProcess"
+			activity="headMangerActivity"
+			url="$UI/OA/signature/process/signatureApply/headMangerActivity.a"
+			device="m"></item>
+		<item label="外出申请" process="/OA/workTime/process/outApply/outApplyProcess"
+			activity="mainActivity" url="$UI/OA/workTime/process/outApply/mainActivity.a"
+			display="hide" device="m"></item>
+		<item label="外出申请" display="hide"
+			process="/OA/workTime/process/outApply/outApplyProcess" activity="bizActivity1"
+			url="$UI/OA/workTime/process/outApply/bizActivity1.a" device="m"></item>
+		<item label="外出申请审批" display="hide"
+			process="/OA/workTime/process/outApply/outApplyProcess" activity="bizActivity2"
+			url="$UI/OA/workTime/process/outApply/bizActivity2.a" device="m"></item>
+		<item label="人事部审批" display="hide"
+			process="/OA/workTime/process/outApply/outApplyProcess" activity="bizActivity3"
+			url="$UI/OA/workTime/process/outApply/bizActivity3.a" device="m"></item>
+
+		<item label="报销申请"
+			process="/OA/finance/process/financeReimbrseApply/financeReimbrseApplyProcess"
+			activity="startActivity"
+			url="$UI/OA/finance/process/financeReimbrseApply/startActivity.a"
+			display="hide" device="m"></item>
+		<item label="报销申请通知"
+			process="/OA/finance/process/financeReimbrseApply/financeReimbrseApplyProcess"
+			activity="noticeActivity"
+			url="$UI/OA/finance/process/financeReimbrseApply/noticeActivity.a"
+			display="hide" device="m"></item>
+		<item label="报销申请" display="hide"
+			process="/OA/finance/process/financeReimbrseApply/financeReimbrseApplyProcess"
+			activity="createActivity"
+			url="$UI/OA/finance/process/financeReimbrseApply/createActivity.a"
+			device="m"></item>
+		<item label="部门领导审批" display="hide"
+			process="/OA/finance/process/financeReimbrseApply/financeReimbrseApplyProcess"
+			activity="deptActivity" url="$UI/OA/finance/process/financeReimbrseApply/deptActivity.a"
+			device="m"></item>
+		<item label="分管领导审批" display="hide"
+			process="/OA/finance/process/financeReimbrseApply/financeReimbrseApplyProcess"
+			activity="propertyActivity"
+			url="$UI/OA/finance/process/financeReimbrseApply/propertyActivity.a"
+			device="m"></item>
+		<item label="财务出纳" display="hide"
+			process="/OA/finance/process/financeReimbrseApply/financeReimbrseApplyProcess"
+			activity="cashiActivity"
+			url="$UI/OA/finance/process/financeReimbrseApply/cashiActivity.a"
+			device="m"></item>
+		<item label="手机端首页"
+			process="/OA/knowledge/process/knowledgeMobile/knowledgeMobileProcess"
+			activity="knowledgeMobileBaseActivity"
+			url="$UI/OA/knowledge/process/knowledgeMobile/knowledgeMobileBaseActivity.a"
+			display="hide" device="m"></item>
+		<item label="我的信息"
+			process="/SA_X/OPM/showPersonMobile/process/showPersonMobile/showPersonMobileProcess"
+			activity="mainActivity"
+			url="$UI/SA_X/OPM/showPersonMobile/process/showPersonMobile/mainActivity.a"
+			display="hide" device="m"></item>
+		<item label="所有日志"
+			process="/OA/schedule/process/workCalendar/process/workCalendar/workCalendarProcess"
+			activity="allWorkLog"
+			url="$UI/OA/schedule/process/workCalendar/process/workCalendar/allWorkLog.a"
+			display="hide" device="m"></item>
+		<item label="工作首页" process="/OA/workHome/process/workHome/workHomeProcess"
+			activity="mainActivity" url="$UI/OA/workHome/process/workHome/mainActivity.a"
+			display="hide" device="m"></item>
+		<item label="功能选择" process="/OA/workHome/process/workHome/workHomeProcess"
+			activity="applyChooseActivity" url="$UI/OA/workHome/process/workHome/applyChooseActivity.a"
+			display="hide" device="m"></item>
+
+		<item label="统计个人签到" process="/OA/sign/process/sign/signProcess"
+			activity="statisticsPerSignActivity" url="$UI/OA/sign/process/sign/statisticsPerSignActivity.a"
+			display="hide" device="m"></item>
+		<item label="统计" process="/OA/sign/process/sign/signProcess"
+			activity="statisticsActivity" url="$UI/OA/sign/process/sign/statisticsActivity.a"
+			display="hide" device="m"></item>
+		<item label="团队签到信息" process="/OA/sign/process/sign/signProcess"
+			activity="groupSignActivity" url="$UI/OA/sign/process/sign/groupSignActivity.a"
+			display="hide" device="m"></item>
+		<item label="签到提交" process="/OA/sign/process/sign/signProcess"
+			activity="signDetailActivity" url="$UI/OA/sign/process/sign/signDetailActivity.a"
+			display="hide" device="m"></item>
+		<item label="签到地点微调" process="/OA/sign/process/sign/signProcess"
+			activity="signMapActivity" url="$UI/OA/sign/process/sign/signMapActivity.a"
+			display="hide" device="m"></item>
+		<item label="关于我们" process="/SA_X/aboutDD/process/about/aboutProcess"
+			activity="mainActivity" url="$UI/SA_X/aboutDD/process/about/mainActivity.a"
+			display="hide" device="m"></item>
+
+		<item label="个人考勤统计" process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="CountAttendanceActivity"
+			url="$UI/OA/attendance/process/attendance/CountAttendanceActivity.a"
+			display="hide" device="m"></item>
+		<item label="新增考勤组" process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="AttendanceAdminActivity"
+			url="$UI/OA/attendance/process/attendance/AttendanceAdminActivity.a"
+			display="hide" device="m"></item>
+		<item label="规则设置" process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="RuleSetActivity" url="$UI/OA/attendance/process/attendance/RuleSetActivity.a"
+			display="hide" device="m"></item>
+		<item label="考勤时间" process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="AttendanceTimeActivity"
+			url="$UI/OA/attendance/process/attendance/AttendanceTimeActivity.a"
+			display="hide" device="m"></item>
+		<item label="考勤星期" process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="AttendanceWeekActivity"
+			url="$UI/OA/attendance/process/attendance/AttendanceWeekActivity.a"
+			display="hide" device="m"></item>
+		<item label="新增班次" process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="departBActivity" url="$UI/OA/attendance/process/attendance/departBActivity.a"
+			display="hide" device="m"></item>
+		<item label="修改班次" process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="departAActivity" url="$UI/OA/attendance/process/attendance/departAActivity.a"
+			display="hide" device="m"></item>
+		<item label="位置选择" process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="AddressChoiceActivity"
+			url="$UI/OA/attendance/process/attendance/AddressChoiceActivity.a"
+			display="hide" device="m"></item>
+		<item label="设置考勤规则" process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="SetAttendanceActivity"
+			url="$UI/OA/attendance/process/attendance/SetAttendanceActivity.a"
+			display="hide" device="m"></item>
+		<item label="添加办公地点" process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="AddWorkAddressActivity"
+			url="$UI/OA/attendance/process/attendance/AddWorkAddressActivity.a"
+			display="hide" device="m"></item>
+		<item label="设置办公地点" process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="SetAddrActivity" url="$UI/OA/attendance/process/attendance/SetAddrActivity.a"
+			display="hide" device="m"></item>
+		<item label="考勤组管理" process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="AttendanceManagerActivity"
+			url="$UI/OA/attendance/process/attendance/AttendanceManagerActivity.a"
+			display="hide" device="m"></item>
+		<item label="设置考勤人员" process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="SetAttendancePeopleActivity"
+			url="$UI/OA/attendance/process/attendance/SetAttendancePeopleActivity.a"
+			display="hide" device="m"></item>
+		
+		
+		
+		
+		
+		<item label="高级设置" display="hide"
+			process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="settingActivity"
+			url="$UI/OA/attendance/process/attendanceAppeal/settingActivity.a"
+			device="m"></item>
+		<item label="新增考勤组" display="hide"
+			process="/OA/attendance/process/attendance/attendanceProcess"
+			activity="newAttendanceActivity"
+			url="$UI/OA/attendance/process/attendanceAppeal/newAttendanceActivity.a"
+			device="m"></item>
+	<item label="考勤申诉" process="/OA/attendance/process/attendanceAppeal/attendanceAppealProcess" activity="aLateAppealActivity" url="$UI/OA/attendance/process/attendanceAppeal/aLateAppealActivity.a" device="m" display="hide"></item><item label="考勤申诉" display="hide" process="/OA/attendance/process/attendanceAppeal/attendanceAppealProcess" activity="LateAppealActivity" url="$UI/OA/attendance/process/attendanceAppeal/LateAppealActivity.a" device="m"></item><item label="部门领导" display="hide" process="/OA/attendance/process/attendanceAppeal/attendanceAppealProcess" activity="depLeadershipActivity" url="$UI/OA/attendance/process/attendanceAppeal/depLeadershipActivity.a" device="m"></item><item label="分管领导" display="hide" process="/OA/attendance/process/attendanceAppeal/attendanceAppealProcess" activity="chargeLeadershipActivity" url="$UI/OA/attendance/process/attendanceAppeal/chargeLeadershipActivity.a" device="m"></item><item label="人事" display="hide" process="/OA/attendance/process/attendanceAppeal/attendanceAppealProcess" activity="personnelMattersActivity" url="$UI/OA/attendance/process/attendanceAppeal/personnelMattersActivity.a" device="m"></item></item>
+</root>

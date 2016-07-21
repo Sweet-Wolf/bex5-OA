@@ -1,0 +1,4 @@
+[
+ {"fID":1,"fLabel":"待我审批","fUrl":"$UI/SA/task/taskView/waitActivity.m.w","fColor":"#FFFFFF","fIconClass":"icon-ios7-more","fProcess":"/SA/task/taskView/taskViewProcess","fActivity":"mainActivity"},
+ {"fID":2,"fLabel":"我发起的","fUrl":"$UI/SA/task/taskView/submitActivity.m.w","fColor":"#FFFFFF","fIconClass":"icon-mic-c","fProcess":"/SA/task/taskView/taskViewProcess","fActivity":"mainActivity"}
+]

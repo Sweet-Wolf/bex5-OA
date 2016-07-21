@@ -1,0 +1,9 @@
+.portal-main [xid='configDialog'] .x-dialog {
+	opacity: 0.8;
+}
+div[widgetid='wNewAndPicPortlet']{
+	height:230px
+}
+div[widgetid='wNoticePortlet']{
+	height:230px
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <item label="预算管理" iconClass="icon-ios7-browsers"> 
+    <item label="基础设置" device="pc"> 
+      <item label="总账科目设置" process="/OA/badgut/process/baseSet/badgutAccountSet/badgutAccountSetProcess"
+        activity="badgutAccountSetActivity" url="$UI/OA/badgut/process/baseSet/badgutAccountSet/badgutAccountSetActivity.a"/>
+      <item label="成本中心设置" process="/OA/badgut/process/baseSet/badgutCostCenterSet/badgutCostCenterSetProcess"
+        activity="badgutCostCenterSetActivity" url="$UI/OA/badgut/process/baseSet/badgutCostCenterSet/badgutCostCenterSetActivity.a"/>
+    </item>  
+    <item display="solid" label="预算计划申请" device="pc">
+      <item label="预算计划申请" process="/OA/badgut/process/badgutApply/badgutApplyProcess"
+        activity="startActivity" url="$UI/OA/badgut/process/badgutApply/startActivity.a"/>
+      <item label="预算计划申请" display="hide" process="/OA/badgut/process/badgutApply/badgutApplyProcess"
+        activity="applyActivity" url="$UI/OA/badgut/process/badgutApply/applyActivity.a"/>
+      <item label="部门领导审批" display="hide" process="/OA/badgut/process/badgutApply/badgutApplyProcess"
+        activity="deptAuditActivity" url="$UI/OA/badgut/process/badgutApply/deptAuditActivity.a"/>
+      <item label="财务部门审批" display="hide" process="/OA/badgut/process/badgutApply/badgutApplyProcess"
+        activity="accountAuditActivity" url="$UI/OA/badgut/process/badgutApply/accountAuditActivity.a"/>
+      <item label="主管领导审批" display="hide" process="/OA/badgut/process/badgutApply/badgutApplyProcess"
+        activity="managerAuditActivity" url="$UI/OA/badgut/process/badgutApply/managerAuditActivity.a"/>
+      <item label="预算计划申请查询" process="/OA/badgut/process/badgutApplyQuery/badgutApplyQueryProcess"
+        activity="badgutApplyQueryActivity" url="$UI/OA/badgut/process/badgutApplyQuery/badgutApplyQueryActivity.a"/>
+    </item>
+    <item display="solid" label="预算计划变更" device="pc">
+      <item label="预算计划变更" process="/OA/badgut/process/badgutAlter/badgutAlterProcess"
+        activity="startActivity" url="$UI/OA/badgut/process/badgutAlter/startActivity.a"/>
+      <item label="预算变更申请" display="hide" process="/OA/badgut/process/badgutAlter/badgutAlterProcess"
+        activity="applyActivity" url="$UI/OA/badgut/process/badgutAlter/applyActivity.a"/>
+      <item label="部门领导审批" display="hide" process="/OA/badgut/process/badgutAlter/badgutAlterProcess"
+        activity="deptAuditActivity" url="$UI/OA/badgut/process/badgutAlter/deptAuditActivity.a"/>
+      <item label="财务部门审批" display="hide" process="/OA/badgut/process/badgutAlter/badgutAlterProcess"
+        activity="accountAuditActivity" url="$UI/OA/badgut/process/badgutAlter/accountAuditActivity.a"/>
+      <item label="主管领导审批" display="hide" process="/OA/badgut/process/badgutAlter/badgutAlterProcess"
+        activity="managerAuditActivity" url="$UI/OA/badgut/process/badgutAlter/managerAuditActivity.a"/>
+      <item label="预算计划变更查询" process="/OA/badgut/process/badgutAlterQuery/badgutAlterQueryProcess"
+        activity="startActivity" url="$UI/OA/badgut/process/badgutAlterQuery/startActivity.a"/>
+    </item>
+    <item label="预算月度管理" process="/OA/badgut/process/badgutMonthManage/badgutMonthManageProcess"
+      activity="badgutMonthManageActivity" url="$UI/OA/badgut/process/badgutMonthManage/badgutMonthManageActivity.a" device="pc"/>
+    <item label="预算历史流水查询" process="/OA/badgut/process/badgutHistoryQuery/badgutHistoryQueryProcess"
+      activity="badgutHistoryQueryActivity" url="$UI/OA/badgut/process/badgutHistoryQuery/badgutHistoryQueryActivity.a" device="pc"/>
+    <item label="预算执行统计" process="/OA/badgut/process/badgutStatistics/badgutStatisticsProcess"
+      activity="badgutStatisticsActivity" url="$UI/OA/badgut/process/badgutStatistics/badgutStatisticsActivity.a" device="pc"/>
+  </item> 
+</root>

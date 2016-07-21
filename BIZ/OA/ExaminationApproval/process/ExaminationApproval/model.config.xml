@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><model xmlns="http://www.justep.com/model">
+	<use>/OA/ExaminationApproval/data</use>
+	<use>/OA/ExaminationApproval/logic/action</use>
+	<use>/OA/ExaminationApproval/logic/code</use>
+	<use>/system/logic/fn</use>
+	<use>/system/logic/action</use>
+	<use>/system/logic/code</use>
+	<use>/OA/officeSupplyConsumables</use>
+	<use>/OA/officeSupplyConsumables/data</use>
+	<use>/OA/officeSupplyConsumables/logic</use>
+	<use>/OA/officeSupplyConsumables/logic/action</use>
+	<use>/OA/officeSupplyConsumables/logic/code</use>
+	<use>/OA/officeSupplyConsumables/ontology</use>
+	<use>/OA/officeSupplyConsumables/process</use>
+<use>/OA/finance/process</use><use>/OA/finance/logic/action</use><use>/OA/finance/logic/code</use><use>/OA/finance/data</use><use>/portal/logic/action</use></model>

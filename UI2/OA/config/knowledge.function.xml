@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <item display="solid" label="知识中心" iconClass="icon-ios7-browsers" device="pc"> 
+    <item display="solid" label="基础设置" device="pc"> 
+      <item label="栏目设置" process="/OA/knowledge/process/folderSet/folderSetProcess"
+        activity="folderSetActivity" url="$UI/OA/knowledge/process/folderSet/folderSetActivity.a"/> 
+    </item>  
+    <item label="知识发布" process="/OA/knowledge/process/publishKnowledge/publishKnowledgeProcess"
+      activity="publishKWActivity" url="$UI/OA/knowledge/process/publishKnowledge/publishKWActivity.a" device="pc"/>
+    <item label="知识发布-部门领导审批" display="hide" process="/OA/knowledge/process/publishKnowledge/publishKnowledgeProcess"
+      activity="deptApvActivity" url="$UI/OA/knowledge/process/publishKnowledge/deptApvActivity.a" device="pc"/>  
+    <item label="知识发布-主管领导审批" display="hide" process="/OA/knowledge/process/publishKnowledge/publishKnowledgeProcess"
+      activity="chargeApvActivity" url="$UI/OA/knowledge/process/publishKnowledge/chargeApvActivity.a" device="pc"/>  
+    <item label="知识发布-发布" display="hide" process="/OA/knowledge/process/publishKnowledge/publishKnowledgeProcess"
+      activity="publishActivity" url="$UI/OA/knowledge/process/publishKnowledge/publishActivity.a" device="pc"/>  
+     <item label="知识发布(文档)" process="/OA/knowledge/process/publishKnowledge/publishKnowledgeProcess"
+      activity="docActivity" url="$UI/OA/knowledge/process/publishKnowledge/docActivity.a" device="pc"/>
+    <item label="知识发布(批量)" process="/OA/knowledge/process/batchDocPublish/batchDocPublishProcess"
+      activity="batchPublishActivity" url="$UI/OA/knowledge/process/batchDocPublish/batchPublishActivity.a" device="pc"/>
+    <item label="知识发布(链接)" process="/OA/knowledge/process/publishKnowledge/publishKnowledgeProcess"
+      activity="urlActivity" url="$UI/OA/knowledge/process/publishKnowledge/urlActivity.a" device="pc"/>
+    <item label="知识发布(网页)" process="/OA/knowledge/process/publishKnowledge/publishKnowledgeProcess"
+      activity="htmlActivity" url="$UI/OA/knowledge/process/publishKnowledge/htmlActivity.a" device="pc"/>  
+    <item label="知识发布管理" process="/OA/knowledge/process/publishKnowledgeManage/publishKnowledgeManageProcess"
+      activity="publishKWManageActivity" url="$UI/OA/knowledge/process/publishKnowledgeManage/publishKnowledgeManage.a" device="pc"/>  
+    <item label="知识库" process="/OA/knowledge/process/knowledgeBase/knowledgeBaseProcess"
+      activity="knowledgeBaseActivity" url="$UI/OA/knowledge/process/knowledgeBase/knowledgeBaseActivity.a" device="pc"/>  
+    <item label="知识库管理" process="/OA/knowledge/process/knowledgeBaseManage/knowledgeBaseManageProcess"
+      activity="knowledgeBaseMGActivity" url="$UI/OA/knowledge/process/knowledgeBaseManage/knowledgeBaseMGActivity.a" device="pc"/>  
+    <item label="文档关注" process="/OA/knowledge/process/knowledgeGZ/knowledgeGZProcess"
+      activity="mainActivity" url="$UI/OA/knowledge/process/knowledgeGZ/mainActivity.a" device="pc"/>
+    <item label="知识发布-申请" display="hide" process="/OA/knowledge/process/publishKnowledge/publishKnowledgeProcess"
+      activity="applyActivity" url="$UI/OA/knowledge/process/publishKnowledge/applyActivity.a" device="pc"/>
+  </item> 
+</root>

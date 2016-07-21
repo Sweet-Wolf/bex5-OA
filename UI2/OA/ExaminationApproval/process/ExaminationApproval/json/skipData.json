@@ -1,0 +1,9 @@
+[{"fID":1,"fLabel":"请假","fUrl":"$UI/OA/workTime/process/leave/mainActivity.m.w","fColor":"#398A42","fIconClass":"icon-android-data","fProcess":"/OA/workTime/process/leave/leaveProcess","fActivity":"mainActivity"},
+ {"fID":2,"fLabel":"报销","fUrl":"$UI/OA/finance/process/financeReimbrseApply/startActivity.m.w","fColor":"#80179B","fIconClass":"icon-clipboard","fProcess":"/OA/finance/process/financeReimbrseApply/financeReimbrseApplyProcess","fActivity":"startActivity"},
+ {"fID":3,"fLabel":"出差","fUrl":"$UI/OA/workTime/process/evection/mainActivity.m.w","fColor":"#FF0080","fIconClass":"icon-plane","fProcess":"/OA/workTime/process/evection/evectionProcess","fActivity":"mainActivity"},
+ {"fID":4,"fLabel":"外出","fUrl":"$UI/OA/workTime/process/outApply/mainActivity.m.w","fColor":"#400040","fIconClass":"icon-model-s","fProcess":"/OA/workTime/process/outApply/outApplyProcess","fActivity":"mainActivity"},
+ {"fID":5,"fLabel":"物品领用","fUrl":"$UI/OA/officeSupplyConsumables/process/officeSupplyUseApply/startActivity.m.w","fColor":"#FF86C2","fIconClass":"icon-bag","fProcess":"/OA/officeSupplyConsumables/process/officeSupplyUseApply/officeSupplyUseApplyProcess","fActivity":"startActivity"},
+ {"fID":6,"fLabel":"会议室申请","fUrl":"$UI/OA/meeting/process/boardroomUseApply/useApply.m.w","fColor":"#EECF53","fIconClass":"icon-person-stalker","fProcess":"/OA/meeting/process/boardroomUseApply/boardroomUseApplyProcess","fActivity":"useApply"},
+ {"fID":7,"fLabel":"借款","fUrl":"$UI/OA/finance/process/financeLoanApply/startActivity.m.w","fColor":"#0080FF","fIconClass":"icon-social-bitcoin","fProcess":"/OA/finance/process/financeLoanApply/financeLoanApplyProcess","fActivity":"startActivity"},
+ {"fID":8,"fLabel":"印章","fUrl":"$UI/OA/signature/process/signatureApply/startActivity.m.w","fColor":"#FF0000","fIconClass":"glyphicon glyphicon-pawn","fProcess":"/OA/signature/process/signatureApply/signatureApplyProcess","fActivity":"startActivity"}
+]

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <item label="统计查询" iconClass="icon-ios7-browsers" device="pc"> 
+    <item label="用车月费用统计" process="/OA/car/process/carFeesAnalysis/carFeesAnalysisProcess"
+      activity="mainActivity" url="$UI/OA/car/process/carFeesAnalysis/mainActivity.a"/>  
+    <item label="费用类型统计" process="/OA/finance/process/financeReimbrseExcel/financeReimbrseExcelProcess"
+      activity="startActivity" url="$UI/OA/finance/process/financeReimbrseExcel/startActivity.a"/>  
+    <item label="资产类别统计" process="/OA/asset/process/assetKindSummary/assetKindSummaryProcess"
+      activity="assetKindSummaryActivity" url="$UI/OA/asset/process/assetKindSummary/assetKindSummaryActivity.a"/>  
+    <item label="公文统计报表" process="/OA/doc/process/docSummaryReport/docSummaryReportProcess"
+      activity="mainActivity" url="$UI/OA/doc/process/docSummaryReport/mainActivity.a"/>  
+    <item label="固定资产申购统计" process="/OA/asset/process/assetSummaryReport/assetSummaryReportProcess"
+      activity="mainActivity" url="$UI/OA/asset/process/assetSummaryReport/mainActivity.a"/>  
+    <item label="办公绩效" process="/OA/officePerformance/process/statisticsTask/statisticsTaskProcess"
+      activity="startActivity" url="$UI/OA/officePerformance/process/statisticsTask/startActivity.a"/> 
+  </item>  
+  <item display="solid" label="报表发布(portlet)" device="pc">
+    <item label="发文统计" process="/OA/doc/process/docSummaryReport/docSummaryReportProcess"
+      activity="docPortal" url="$UI/OA/doc/process/docSummaryReport/docPortal.a" display="hide"/>
+  </item>
+</root>
